@@ -1,0 +1,29 @@
+---
+title: DV_RProject2
+author: Brian Yeh, Valentina Chen
+output: html_document
+---
+
+```{r echo=FALSE, message=FALSE}
+setwd("C:/Users/Brian Yeh/Github/DataVisualization/DV_RProject2/00 Doc")
+require("jsonlite")
+require("RCurl")
+require(extrafont)
+require("ggplot2")
+  
+```
+
+###Summary of dataframe  
+SQL Query: select * from titanic
+```{r echo=FALSE}
+source("../01 Data/Dataframes_All.R", echo = TRUE)
+summary(df)
+```
+  
+###Subset of dataframe: White Males with traffic citations
+```{r}
+source("../01 Data/Dataframes_All.R", echo = TRUE)
+
+df.sub <- subset(df, GENDER == "M" & RACE == "WHITE" & VIOLATION_TYPE == "Citation" & MAKE == "BMW")
+df.sub
+```
