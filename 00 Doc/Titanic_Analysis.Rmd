@@ -9,7 +9,10 @@ setwd("C:/Users/Brian Yeh/Github/DataVisualization/DV_RProject2/00 Doc")
 require("jsonlite")
 require("RCurl")
 require(extrafont)
-require("ggplot2")
+require(tidyr)
+require(dplyr)
+require(ggplot2)
+
   
 ```
 
@@ -20,10 +23,23 @@ source("../01 Data/Dataframes_All.R", echo = TRUE)
 summary(df)
 ```
   
-###Subset of dataframe: White Males with traffic citations
+###Subset of dataframe: White Males with traffic citations who drive BMW's
 ```{r}
-source("../01 Data/Dataframes_All.R", echo = TRUE)
+
 
 df.sub <- subset(df, GENDER == "M" & RACE == "WHITE" & VIOLATION_TYPE == "Citation" & MAKE == "BMW")
 df.sub
+```
+  
+###What combination of race and gender 
+```{r}
+
+df %>%  filter(VIOLATION_TYPE %in% c("Citation", "Warning")) %>%  group_by(VIOLATION_TYPE, RACE) %>% summarise(count = n()) %>% arrange(VIOLATION_TYPE, count) %>% group_by(VIOLATION_TYPE) %>% mutate(totEach = sum(count)) %>% group_by(RACE, add=TRUE) %>% mutate(percentage_of_total=round(100*count/totEach,2)) %>% ggplot(., aes(x= RACE, y = percentage_of_total, color = RACE, fill=RACE)) + geom_bar(stat = "identity") + facet_wrap(~VIOLATION_TYPE) +theme(axis.text.x = element_blank(), axis.ticks = element_blank())
+
+
+```
+
+```{r}
+df %>%  filter(VIOLATION_TYPE %in% c("Citation", "Warning"), GENDER %in% c("F", "M")) %>%  group_by(VIOLATION_TYPE, GENDER) %>% summarise(count = n()) %>% arrange(VIOLATION_TYPE, count) %>% group_by(VIOLATION_TYPE) %>% mutate(totEach = sum(count)) %>% group_by(GENDER, add=TRUE) %>% mutate(percentage_of_total=round(100*count/totEach,2)) %>% ggplot(., aes(x=VIOLATION_TYPE, y = percentage_of_total, fill= GENDER)) + geom_bar(stat = "identity")
+
 ```

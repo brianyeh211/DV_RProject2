@@ -73,508 +73,321 @@ img {
 ## &gt; df &lt;- data.frame(fromJSON(getURL(URLencode(&quot;129.152.144.84:5001/rest/native/?query=\&quot;select * from traffic_violation\&quot;&quot;), 
 ## +     httpheader = c(DB = .... [TRUNCATED]</code></pre>
 <pre><code>##     DATE_OF_STOP    TIME_OF_STOP  AGENCY    
-##  5/14/2013:  28   23;34;00:  28   MCP:9998  
-##  3/25/2015:  26   0;02;00 :  26             
-##  10/3/2014:  24   16;14;00:  26             
-##  4/3/2015 :  24   16;53;00:  24             
-##  4/8/2014 :  24   22;26;00:  24             
-##  5/21/2014:  24   23;23;00:  22             
-##  (Other)  :9848   (Other) :9848             
+##  5/14/2013:  14   23;34;00:  14   MCP:4999  
+##  3/25/2015:  13   0;02;00 :  13             
+##  10/3/2014:  12   16;14;00:  13             
+##  4/3/2015 :  12   16;53;00:  12             
+##  4/8/2014 :  12   22;26;00:  12             
+##  5/21/2014:  12   23;23;00:  11             
+##  (Other)  :4924   (Other) :4924             
 ##                                            SUBAGENCY   
-##  1st district, Rockville                        :1152  
-##  2nd district, Bethesda                         :1506  
-##  3rd district, Silver Spring                    :2122  
-##  4th district, Wheaton                          :2448  
-##  5th district, Germantown                       :1064  
-##  6th district, Gaithersburg / Montgomery Village:1376  
-##  Headquarters and Special Operations            : 330  
+##  1st district, Rockville                        : 576  
+##  2nd district, Bethesda                         : 753  
+##  3rd district, Silver Spring                    :1061  
+##  4th district, Wheaton                          :1224  
+##  5th district, Germantown                       : 532  
+##  6th district, Gaithersburg / Montgomery Village: 688  
+##  Headquarters and Special Operations            : 165  
 ##                                                                                     DESCRIPTION  
-##  DRIVER FAILURE TO OBEY PROPERLY PLACED TRAFFIC CONTROL DEVICE INSTRUCTIONS               : 826  
-##  FAILURE TO DISPLAY REGISTRATION CARD UPON DEMAND BY POLICE OFFICER                       : 482  
-##  DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION                                   : 382  
-##  FAILURE OF INDIVIDUAL DRIVING ON HIGHWAY TO DISPLAY LICENSE TO UNIFORMED POLICE ON DEMAND: 252  
-##  DRIVER FAILURE TO STOP AT STOP SIGN LINE                                                 : 248  
-##  OPERATOR NOT RESTRAINED BY SEATBELT                                                      : 234  
-##  (Other)                                                                                  :7574  
+##  DRIVER FAILURE TO OBEY PROPERLY PLACED TRAFFIC CONTROL DEVICE INSTRUCTIONS               : 413  
+##  FAILURE TO DISPLAY REGISTRATION CARD UPON DEMAND BY POLICE OFFICER                       : 241  
+##  DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION                                   : 191  
+##  FAILURE OF INDIVIDUAL DRIVING ON HIGHWAY TO DISPLAY LICENSE TO UNIFORMED POLICE ON DEMAND: 126  
+##  DRIVER FAILURE TO STOP AT STOP SIGN LINE                                                 : 124  
+##  OPERATOR NOT RESTRAINED BY SEATBELT                                                      : 117  
+##  (Other)                                                                                  :3787  
 ##                               LOCATION                LATITUDE   
-##  W/B IS 370 @ IS 270              :  22   null            : 850  
-##  CLOPPER RD E/B @ ORCHARD HILLS DR:  20   39.1206207275391:   8  
-##  10901 WESTLAKE DRIVE             :  18   38.9904823303223:   6  
-##  IS 370 @ IS 270                  :  18   38.9941520690918:   6  
-##  URBANA DR / GEORGIA AVE          :  16   38.9973831176758:   6  
-##  WAYNE AVE / DALE DR              :  16   39.0320739746094:   6  
-##  (Other)                          :9888   (Other)         :9116  
+##  W/B IS 370 @ IS 270              :  11   null            : 425  
+##  CLOPPER RD E/B @ ORCHARD HILLS DR:  10   39.1206207275391:   4  
+##  10901 WESTLAKE DRIVE             :   9   38.9904823303223:   3  
+##  IS 370 @ IS 270                  :   9   38.9941520690918:   3  
+##  URBANA DR / GEORGIA AVE          :   8   38.9973831176758:   3  
+##  WAYNE AVE / DALE DR              :   8   39.0320739746094:   3  
+##  (Other)                          :4944   (Other)         :4558  
 ##              LONGITUDE    ACCIDENT  BELTS      PERSONAL_INJURY
-##  null             : 850   No:9998   No :9658   No :9888       
-##  -77.0229339599609:   8             Yes: 340   Yes: 110       
-##  -77.0267333984375:   8                                       
-##  -77.0480651855469:   8                                       
-##  -77.0771102905273:   8                                       
-##  -76.9398880004883:   6                                       
-##  (Other)          :9110                                       
+##  null             : 425   No:4999   No :4829   No :4944       
+##  -77.0229339599609:   4             Yes: 170   Yes:  55       
+##  -77.0267333984375:   4                                       
+##  -77.0480651855469:   4                                       
+##  -77.0771102905273:   4                                       
+##  -76.9398880004883:   3                                       
+##  (Other)          :4555                                       
 ##  PROPERTY_DAMAGE FATAL      COMMERCIAL_LICENSE HAZMAT   
-##  No :9838        No :9996   No :9694           No:9998  
-##  Yes: 160        Yes:   2   Yes: 304                    
+##  No :4919        No :4998   No :4847           No:4999  
+##  Yes:  80        Yes:   1   Yes: 152                    
 ##                                                         
 ##                                                         
 ##                                                         
 ##                                                         
 ##                                                         
 ##  COMMERCIAL_VEHICLE ALCOHOL    WORK_ZONE     STATE     
-##  No :9908           No :9982   No:9998   MD     :8828  
-##  Yes:  90           Yes:  16             VA     : 350  
-##                                          DC     : 254  
-##                                          XX     :  88  
-##                                          PA     :  70  
-##                                          FL     :  42  
-##                                          (Other): 366  
+##  No :4954           No :4991   No:4999   MD     :4414  
+##  Yes:  45           Yes:   8             VA     : 175  
+##                                          DC     : 127  
+##                                          XX     :  44  
+##                                          PA     :  35  
+##                                          FL     :  21  
+##                                          (Other): 183  
 ##                 VEHICLETYPE        YEAR           MAKE          MODEL     
-##  02 - Automobile      :8578   2006   : 692   TOYOTA :1090   4S     :1146  
-##  05 - Light Duty Truck: 644   2003   : 658   FORD   :1002   TK     : 694  
-##  28 - Other           : 232   2004   : 640   HONDA  :1000   CAMRY  : 368  
-##  03 - Station Wagon   : 164   2005   : 622   TOYT   : 574   CIVIC  : 332  
-##  06 - Heavy Duty Truck: 112   2007   : 616   NISSAN : 452   COROLLA: 332  
-##  01 - Motorcycle      :  98   2008   : 578   CHEV   : 358   ACCORD : 306  
-##  (Other)              : 170   (Other):6192   (Other):5522   (Other):6820  
+##  02 - Automobile      :4289   2006   : 346   TOYOTA : 545   4S     : 573  
+##  05 - Light Duty Truck: 322   2003   : 329   FORD   : 501   TK     : 347  
+##  28 - Other           : 116   2004   : 320   HONDA  : 500   CAMRY  : 184  
+##  03 - Station Wagon   :  82   2005   : 311   TOYT   : 287   CIVIC  : 166  
+##  06 - Heavy Duty Truck:  56   2007   : 308   NISSAN : 226   COROLLA: 166  
+##  01 - Motorcycle      :  49   2008   : 289   CHEV   : 179   ACCORD : 153  
+##  (Other)              :  85   (Other):3096   (Other):2761   (Other):3410  
 ##      COLOR       VIOLATION_TYPE        CHARGE    
-##  BLACK  :1912   Citation:4924   21-801.1  :1380  
-##  SILVER :1780   ESERO   : 502   21-201(a1): 826  
-##  WHITE  :1530   SERO    :  20   13-409(b) : 486  
-##  GRAY   :1064   Warning :4552   13-401(h) : 390  
-##  RED    : 854                   21-707(a) : 364  
-##  BLUE   : 686                   16-101(a) : 274  
-##  (Other):2172                   (Other)   :6278  
+##  BLACK  : 956   Citation:2462   21-801.1  : 690  
+##  SILVER : 890   ESERO   : 251   21-201(a1): 413  
+##  WHITE  : 765   SERO    :  10   13-409(b) : 243  
+##  GRAY   : 532   Warning :2276   13-401(h) : 195  
+##  RED    : 427                   21-707(a) : 182  
+##  BLUE   : 343                   16-101(a) : 137  
+##  (Other):1086                   (Other)   :3139  
 ##                    ARTICLE     CONTRIBUTED_TO_ACCIDENT
-##  Maryland Rules        : 100   No :9814               
-##  null                  : 522   Yes: 184               
-##  Transportation Article:9376                          
+##  Maryland Rules        :  50   No :4907               
+##  null                  : 261   Yes:  92               
+##  Transportation Article:4688                          
 ##                                                       
 ##                                                       
 ##                                                       
 ##                                                       
 ##               RACE      GENDER          DRIVER_CITY    DRIVER_STATE 
-##  ASIAN          : 588   F:3252   SILVER SPRING:2494   MD     :9068  
-##  BLACK          :3098   M:6730   GAITHERSBURG :1026   DC     : 310  
-##  HISPANIC       :1898   U:  16   GERMANTOWN   : 784   VA     : 274  
-##  NATIVE AMERICAN:  34            ROCKVILLE    : 782   PA     :  56  
-##  OTHER          : 494            WASHINGTON   : 304   FL     :  34  
-##  WHITE          :3886            BETHESDA     : 288   NJ     :  26  
-##                                  (Other)      :4320   (Other): 230  
+##  ASIAN          : 294   F:1626   SILVER SPRING:1247   MD     :4534  
+##  BLACK          :1549   M:3365   GAITHERSBURG : 513   DC     : 155  
+##  HISPANIC       : 949   U:   8   GERMANTOWN   : 392   VA     : 137  
+##  NATIVE AMERICAN:  17            ROCKVILLE    : 391   PA     :  28  
+##  OTHER          : 247            WASHINGTON   : 152   FL     :  17  
+##  WHITE          :1943            BETHESDA     : 144   NJ     :  13  
+##                                  (Other)      :2160   (Other): 115  
 ##     DL_STATE                           ARREST_TYPE  
-##  MD     :8708   A - Marked Patrol            :8040  
-##  DC     : 322   Q - Marked Laser             :1060  
-##  VA     : 300   B - Unmarked Patrol          : 312  
-##  XX     : 142   S - License Plate Recognition: 162  
-##  PA     :  66   O - Foot Patrol              : 140  
-##  FL     :  58   L - Motorcycle               : 104  
-##  (Other): 402   (Other)                      : 180  
+##  MD     :4354   A - Marked Patrol            :4020  
+##  DC     : 161   Q - Marked Laser             : 530  
+##  VA     : 150   B - Unmarked Patrol          : 156  
+##  XX     :  71   S - License Plate Recognition:  81  
+##  PA     :  33   O - Foot Patrol              :  70  
+##  FL     :  29   L - Motorcycle               :  52  
+##  (Other): 201   (Other)                      :  90  
 ##                            GEOLOCATION  
-##  null                            : 850  
-##  (38.9904827, -77.0230769833333) :   4  
-##  (38.9941516666667, -77.02401)   :   4  
-##  (39.02128, -77.01484)           :   4  
-##  (39.02256935, -76.9755864166667):   4  
-##  (39.0260716666667, -77.011445)  :   4  
-##  (Other)                         :9128</code></pre>
+##  null                            : 425  
+##  (38.9904827, -77.0230769833333) :   2  
+##  (38.9941516666667, -77.02401)   :   2  
+##  (39.02128, -77.01484)           :   2  
+##  (39.02256935, -76.9755864166667):   2  
+##  (39.0260716666667, -77.011445)  :   2  
+##  (Other)                         :4564</code></pre>
 </div>
-<div id="subset-of-dataframe-white-males-with-traffic-citations" class="section level3">
-<h3>Subset of dataframe: White Males with traffic citations</h3>
-<pre class="r"><code>source(&quot;../01 Data/Dataframes_All.R&quot;, echo = TRUE)</code></pre>
-<pre><code>## 
-## &gt; df &lt;- data.frame(fromJSON(getURL(URLencode(&quot;129.152.144.84:5001/rest/native/?query=\&quot;select * from traffic_violation\&quot;&quot;), 
-## +     httpheader = c(DB = .... [TRUNCATED]</code></pre>
+<div id="subset-of-dataframe-white-males-with-traffic-citations-who-drive-bmws" class="section level3">
+<h3>Subset of dataframe: White Males with traffic citations who drive BMW’s</h3>
 <pre class="r"><code>df.sub &lt;- subset(df, GENDER == &quot;M&quot; &amp; RACE == &quot;WHITE&quot; &amp; VIOLATION_TYPE == &quot;Citation&quot; &amp; MAKE == &quot;BMW&quot;)
 df.sub</code></pre>
 <pre><code>##      DATE_OF_STOP TIME_OF_STOP AGENCY
-## 442      1/9/2014     20;11;00    MCP
-## 824      4/6/2015      8;22;00    MCP
-## 1095    5/20/2014     19;35;00    MCP
-## 1220     4/8/2013      8;22;00    MCP
-## 1228    1/31/2013      3;20;00    MCP
-## 1331    4/27/2014     11;33;00    MCP
-## 1604    8/23/2015     23;44;00    MCP
-## 1977    8/23/2014      1;40;00    MCP
-## 2638    1/18/2012     21;04;00    MCP
-## 3255     5/9/2014     18;52;00    MCP
-## 3431    9/26/2012      9;10;00    MCP
-## 3476     4/6/2014      2;59;00    MCP
-## 3587    5/15/2013      8;25;00    MCP
-## 3671     7/3/2012      7;11;00    MCP
-## 3725    9/29/2012      6;22;00    MCP
-## 4222   11/13/2013     18;46;00    MCP
-## 4230    8/31/2015      9;38;00    MCP
-## 4740     3/9/2012     18;19;00    MCP
-## 4815    7/29/2014     15;49;00    MCP
-## 5603     1/9/2014     20;11;00    MCP
-## 5741    5/20/2014     19;35;00    MCP
-## 5867     4/6/2015      8;22;00    MCP
-## 6200    8/23/2014      1;40;00    MCP
-## 6569    4/27/2014     11;33;00    MCP
-## 6666    8/23/2015     23;44;00    MCP
-## 7176     4/8/2013      8;22;00    MCP
-## 7184    1/31/2013      3;20;00    MCP
-## 7576    1/18/2012     21;04;00    MCP
-## 8192     5/9/2014     18;52;00    MCP
-## 8368    9/26/2012      9;10;00    MCP
-## 8413     4/6/2014      2;59;00    MCP
-## 8524    5/15/2013      8;25;00    MCP
-## 8662    9/29/2012      6;22;00    MCP
-## 9159   11/13/2013     18;46;00    MCP
-## 9167    8/31/2015      9;38;00    MCP
-## 9677     3/9/2012     18;19;00    MCP
-## 9752    7/29/2014     15;49;00    MCP
-## 9862     7/3/2012      7;11;00    MCP
+## 482      1/9/2014     20;11;00    MCP
+## 704      4/6/2015      8;22;00    MCP
+## 1134    5/20/2014     19;35;00    MCP
+## 1260     4/8/2013      8;22;00    MCP
+## 1268    1/31/2013      3;20;00    MCP
+## 1371    4/27/2014     11;33;00    MCP
+## 1644    8/23/2015     23;44;00    MCP
+## 2016    8/23/2014      1;40;00    MCP
+## 2758    1/18/2012     21;04;00    MCP
+## 2853    5/15/2013      8;25;00    MCP
+## 3373     5/9/2014     18;52;00    MCP
+## 3516     4/6/2014      2;59;00    MCP
+## 3551    9/26/2012      9;10;00    MCP
+## 3602    7/29/2014     15;49;00    MCP
+## 3710     7/3/2012      7;11;00    MCP
+## 3765    9/29/2012      6;22;00    MCP
+## 4032    8/31/2015      9;38;00    MCP
+## 4262   11/13/2013     18;46;00    MCP
+## 4860     3/9/2012     18;19;00    MCP
 ##                                            SUBAGENCY
-## 442                           2nd district, Bethesda
-## 824                          1st district, Rockville
-## 1095                          2nd district, Bethesda
-## 1220                          2nd district, Bethesda
-## 1228                     3rd district, Silver Spring
-## 1331                         1st district, Rockville
-## 1604 6th district, Gaithersburg / Montgomery Village
-## 1977                           4th district, Wheaton
-## 2638                          2nd district, Bethesda
-## 3255                          2nd district, Bethesda
-## 3431                     3rd district, Silver Spring
-## 3476                        5th district, Germantown
-## 3587                         1st district, Rockville
-## 3671                          2nd district, Bethesda
-## 3725                          2nd district, Bethesda
-## 4222             Headquarters and Special Operations
-## 4230                           4th district, Wheaton
-## 4740 6th district, Gaithersburg / Montgomery Village
-## 4815                     3rd district, Silver Spring
-## 5603                          2nd district, Bethesda
-## 5741                          2nd district, Bethesda
-## 5867                         1st district, Rockville
-## 6200                           4th district, Wheaton
-## 6569                         1st district, Rockville
-## 6666 6th district, Gaithersburg / Montgomery Village
-## 7176                          2nd district, Bethesda
-## 7184                     3rd district, Silver Spring
-## 7576                          2nd district, Bethesda
-## 8192                          2nd district, Bethesda
-## 8368                     3rd district, Silver Spring
-## 8413                        5th district, Germantown
-## 8524                         1st district, Rockville
-## 8662                          2nd district, Bethesda
-## 9159             Headquarters and Special Operations
-## 9167                           4th district, Wheaton
-## 9677 6th district, Gaithersburg / Montgomery Village
-## 9752                     3rd district, Silver Spring
-## 9862                          2nd district, Bethesda
+## 482                           2nd district, Bethesda
+## 704                          1st district, Rockville
+## 1134                          2nd district, Bethesda
+## 1260                          2nd district, Bethesda
+## 1268                     3rd district, Silver Spring
+## 1371                         1st district, Rockville
+## 1644 6th district, Gaithersburg / Montgomery Village
+## 2016                           4th district, Wheaton
+## 2758                          2nd district, Bethesda
+## 2853                         1st district, Rockville
+## 3373                          2nd district, Bethesda
+## 3516                        5th district, Germantown
+## 3551                     3rd district, Silver Spring
+## 3602                     3rd district, Silver Spring
+## 3710                          2nd district, Bethesda
+## 3765                          2nd district, Bethesda
+## 4032                           4th district, Wheaton
+## 4262             Headquarters and Special Operations
+## 4860 6th district, Gaithersburg / Montgomery Village
 ##                                                                                            DESCRIPTION
-## 442                                             DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
-## 824                                            EXCEEDING MAXIMUM SPEED; 46 MPH IN A POSTED 30 MPH ZONE
-## 1095                                                               OPERATOR NOT RESTRAINED BY SEATBELT
-## 1220                                           EXCEEDING MAXIMUM SPEED; 43 MPH IN A POSTED 25 MPH ZONE
-## 1228              DRIVING TO DRIVE MOTOR VEHICLE ON HIGHWAY WITHOUT REQUIRED LICENSE AND AUTHORIZATION
-## 1331   DRIVER WRITING,SENDING,READING A TEXT,ELECTRONIC MSG. WHILE OPER. VEH. IN TRAVEL PORTION OF HWY
-## 1604                                            DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
-## 1977                                              DRIVING MOTOR VEH. WHILE LIC. SUSPENDED UNDER 27-103
-## 2638                                              FAILURE TO ATTACH VEH. REG. PLATES AT FRONT AND REAR
-## 3255         FAILURE OF INDIVIDUAL DRIVING ON HIGHWAY TO DISPLAY LICENSE TO UNIFORMED POLICE ON DEMAND
-## 3431                        DRIVER FAILURE TO OBEY PROPERLY PLACED TRAFFIC CONTROL DEVICE INSTRUCTIONS
-## 3476                                              DRIVING VEHICLE WHILE UNDER THE INFLUENCE OF ALCOHOL
-## 3587                                           EXCEEDING MAXIMUM SPEED; 49 MPH IN A POSTED 40 MPH ZONE
-## 3671                                           EXCEEDING MAXIMUM SPEED; 79 MPH IN A POSTED 55 MPH ZONE
-## 3725                                                                 DRIVING WHILE IMPAIRED BY ALCOHOL
-## 4222         PERSON DRIVING MOTOR VEHICLE WHILE LICENSE SUSPENDED UNDER 17-106, 26-204, 26-206, 27-103
-## 4230                                                  DRIVING VEH. ON HWY. WITH SUSPENDED REGISTRATION
-## 4740                                FAILURE TO DISPLAY REGISTRATION CARD UPON DEMAND BY POLICE OFFICER
-## 4815 PERSON DRIVING MOTOR VEHICLE ON HIGHWAY OR PUBLIC USE PROPERTY ON SUSPENDED LICENSE AND PRIVILEGE
-## 5603                                            DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
-## 5741                                                               OPERATOR NOT RESTRAINED BY SEATBELT
-## 5867                                           EXCEEDING MAXIMUM SPEED; 46 MPH IN A POSTED 30 MPH ZONE
-## 6200                                              DRIVING MOTOR VEH. WHILE LIC. SUSPENDED UNDER 27-103
-## 6569   DRIVER WRITING,SENDING,READING A TEXT,ELECTRONIC MSG. WHILE OPER. VEH. IN TRAVEL PORTION OF HWY
-## 6666                                            DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
-## 7176                                           EXCEEDING MAXIMUM SPEED; 43 MPH IN A POSTED 25 MPH ZONE
-## 7184              DRIVING TO DRIVE MOTOR VEHICLE ON HIGHWAY WITHOUT REQUIRED LICENSE AND AUTHORIZATION
-## 7576                                              FAILURE TO ATTACH VEH. REG. PLATES AT FRONT AND REAR
-## 8192         FAILURE OF INDIVIDUAL DRIVING ON HIGHWAY TO DISPLAY LICENSE TO UNIFORMED POLICE ON DEMAND
-## 8368                        DRIVER FAILURE TO OBEY PROPERLY PLACED TRAFFIC CONTROL DEVICE INSTRUCTIONS
-## 8413                                              DRIVING VEHICLE WHILE UNDER THE INFLUENCE OF ALCOHOL
-## 8524                                           EXCEEDING MAXIMUM SPEED; 49 MPH IN A POSTED 40 MPH ZONE
-## 8662                                                                 DRIVING WHILE IMPAIRED BY ALCOHOL
-## 9159         PERSON DRIVING MOTOR VEHICLE WHILE LICENSE SUSPENDED UNDER 17-106, 26-204, 26-206, 27-103
-## 9167                                                  DRIVING VEH. ON HWY. WITH SUSPENDED REGISTRATION
-## 9677                                FAILURE TO DISPLAY REGISTRATION CARD UPON DEMAND BY POLICE OFFICER
-## 9752 PERSON DRIVING MOTOR VEHICLE ON HIGHWAY OR PUBLIC USE PROPERTY ON SUSPENDED LICENSE AND PRIVILEGE
-## 9862                                           EXCEEDING MAXIMUM SPEED; 79 MPH IN A POSTED 55 MPH ZONE
+## 482                                             DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
+## 704                                            EXCEEDING MAXIMUM SPEED; 46 MPH IN A POSTED 30 MPH ZONE
+## 1134                                                               OPERATOR NOT RESTRAINED BY SEATBELT
+## 1260                                           EXCEEDING MAXIMUM SPEED; 43 MPH IN A POSTED 25 MPH ZONE
+## 1268              DRIVING TO DRIVE MOTOR VEHICLE ON HIGHWAY WITHOUT REQUIRED LICENSE AND AUTHORIZATION
+## 1371   DRIVER WRITING,SENDING,READING A TEXT,ELECTRONIC MSG. WHILE OPER. VEH. IN TRAVEL PORTION OF HWY
+## 1644                                            DRIVING VEHICLE ON HIGHWAY WITH SUSPENDED REGISTRATION
+## 2016                                              DRIVING MOTOR VEH. WHILE LIC. SUSPENDED UNDER 27-103
+## 2758                                              FAILURE TO ATTACH VEH. REG. PLATES AT FRONT AND REAR
+## 2853                                           EXCEEDING MAXIMUM SPEED; 49 MPH IN A POSTED 40 MPH ZONE
+## 3373         FAILURE OF INDIVIDUAL DRIVING ON HIGHWAY TO DISPLAY LICENSE TO UNIFORMED POLICE ON DEMAND
+## 3516                                              DRIVING VEHICLE WHILE UNDER THE INFLUENCE OF ALCOHOL
+## 3551                        DRIVER FAILURE TO OBEY PROPERLY PLACED TRAFFIC CONTROL DEVICE INSTRUCTIONS
+## 3602 PERSON DRIVING MOTOR VEHICLE ON HIGHWAY OR PUBLIC USE PROPERTY ON SUSPENDED LICENSE AND PRIVILEGE
+## 3710                                           EXCEEDING MAXIMUM SPEED; 79 MPH IN A POSTED 55 MPH ZONE
+## 3765                                                                 DRIVING WHILE IMPAIRED BY ALCOHOL
+## 4032                                                  DRIVING VEH. ON HWY. WITH SUSPENDED REGISTRATION
+## 4262         PERSON DRIVING MOTOR VEHICLE WHILE LICENSE SUSPENDED UNDER 17-106, 26-204, 26-206, 27-103
+## 4860                                FAILURE TO DISPLAY REGISTRATION CARD UPON DEMAND BY POLICE OFFICER
 ##                                LOCATION         LATITUDE         LONGITUDE
-## 442       OLD GEORGETOWN / NICHOLSON LN 39.0450057983398 -77.1205291748047
-## 824                   13801 ESWORTHY RD 39.0810966491699 -77.2935180664062
-## 1095         OLD GEORGETOWN RD AND I270 39.0324630737305 -77.1359100341797
-## 1220              N/B 5329 WESTBARD AVE 38.9624824523926 -77.1063919067383
-## 1228               WAYNE AVE/DALE DRIVE             null              null
-## 1331            N/B 355 AT TEMPLETON PL 39.0666580200195 -77.1279754638672
-## 1604          SAM EIG HWY @ SB 270 RAMP 39.1183280944824 -77.2050476074219
-## 1977       CONNECTCUT AVE / WELLER-DEAN 39.0641784667969 -77.0692291259766
-## 2638              7359 WISCONSIN AVENUE 38.9839134216309 -77.0925674438477
-## 3255                LYNWOOD PL/MANOR RD 38.9965286254883 -77.0788650512695
-## 3431      SB COLESVILLE RD @ SECOND AVE 38.9945945739746 -77.0297470092773
-## 3476     NB IS 270 AND GAME PRESERVE RD             null              null
-## 3587         EB 370 @ SHADY GROVE METRO 39.1279487609863 -77.1612243652344
-## 3671            MONTROSE RD ON N/B I270 39.0649490356445 -77.1564788818359
-## 3725       WISCONSIN AVE X DRUMMOND AVE        38.984375 -77.0915451049805
-## 4222        SHADY GROVE RD @ GAITHER RD 39.1176490783691 -77.1839065551758
-## 4230         GEORGIA AVE/ GLENALLAN AVE 39.0619926452637 -77.0531539916992
-## 4740                8100 BEECHCRAFT AVE             null              null
-## 4815 988 ELLSWORTH DR/ 8526 GEORGIA AVE 39.0622634887695 -77.1578674316406
-## 5603      OLD GEORGETOWN / NICHOLSON LN 39.0450057983398 -77.1205291748047
-## 5741         OLD GEORGETOWN RD AND I270 39.0324630737305 -77.1359100341797
-## 5867                  13801 ESWORTHY RD 39.0810966491699 -77.2935180664062
-## 6200       CONNECTCUT AVE / WELLER-DEAN 39.0641784667969 -77.0692291259766
-## 6569            N/B 355 AT TEMPLETON PL 39.0666580200195 -77.1279754638672
-## 6666          SAM EIG HWY @ SB 270 RAMP 39.1183280944824 -77.2050476074219
-## 7176              N/B 5329 WESTBARD AVE 38.9624824523926 -77.1063919067383
-## 7184               WAYNE AVE/DALE DRIVE             null              null
-## 7576              7359 WISCONSIN AVENUE 38.9839134216309 -77.0925674438477
-## 8192                LYNWOOD PL/MANOR RD 38.9965286254883 -77.0788650512695
-## 8368      SB COLESVILLE RD @ SECOND AVE 38.9945945739746 -77.0297470092773
-## 8413     NB IS 270 AND GAME PRESERVE RD             null              null
-## 8524         EB 370 @ SHADY GROVE METRO 39.1279487609863 -77.1612243652344
-## 8662       WISCONSIN AVE X DRUMMOND AVE        38.984375 -77.0915451049805
-## 9159        SHADY GROVE RD @ GAITHER RD 39.1176490783691 -77.1839065551758
-## 9167         GEORGIA AVE/ GLENALLAN AVE 39.0619926452637 -77.0531539916992
-## 9677                8100 BEECHCRAFT AVE             null              null
-## 9752 988 ELLSWORTH DR/ 8526 GEORGIA AVE 39.0622634887695 -77.1578674316406
-## 9862            MONTROSE RD ON N/B I270 39.0649490356445 -77.1564788818359
+## 482       OLD GEORGETOWN / NICHOLSON LN 39.0450057983398 -77.1205291748047
+## 704                   13801 ESWORTHY RD 39.0810966491699 -77.2935180664062
+## 1134         OLD GEORGETOWN RD AND I270 39.0324630737305 -77.1359100341797
+## 1260              N/B 5329 WESTBARD AVE 38.9624824523926 -77.1063919067383
+## 1268               WAYNE AVE/DALE DRIVE             null              null
+## 1371            N/B 355 AT TEMPLETON PL 39.0666580200195 -77.1279754638672
+## 1644          SAM EIG HWY @ SB 270 RAMP 39.1183280944824 -77.2050476074219
+## 2016       CONNECTCUT AVE / WELLER-DEAN 39.0641784667969 -77.0692291259766
+## 2758              7359 WISCONSIN AVENUE 38.9839134216309 -77.0925674438477
+## 2853         EB 370 @ SHADY GROVE METRO 39.1279487609863 -77.1612243652344
+## 3373                LYNWOOD PL/MANOR RD 38.9965286254883 -77.0788650512695
+## 3516     NB IS 270 AND GAME PRESERVE RD             null              null
+## 3551      SB COLESVILLE RD @ SECOND AVE 38.9945945739746 -77.0297470092773
+## 3602 988 ELLSWORTH DR/ 8526 GEORGIA AVE 39.0622634887695 -77.1578674316406
+## 3710            MONTROSE RD ON N/B I270 39.0649490356445 -77.1564788818359
+## 3765       WISCONSIN AVE X DRUMMOND AVE        38.984375 -77.0915451049805
+## 4032         GEORGIA AVE/ GLENALLAN AVE 39.0619926452637 -77.0531539916992
+## 4262        SHADY GROVE RD @ GAITHER RD 39.1176490783691 -77.1839065551758
+## 4860                8100 BEECHCRAFT AVE             null              null
 ##      ACCIDENT BELTS PERSONAL_INJURY PROPERTY_DAMAGE FATAL
-## 442        No    No              No              No    No
-## 824        No   Yes              No              No    No
-## 1095       No    No              No              No    No
-## 1220       No   Yes              No              No    No
-## 1228       No    No              No              No    No
-## 1331       No    No              No              No    No
-## 1604       No    No              No              No    No
-## 1977       No    No              No              No    No
-## 2638       No    No              No              No    No
-## 3255       No    No              No              No    No
-## 3431       No    No              No              No    No
-## 3476       No    No              No              No    No
-## 3587       No    No              No              No    No
-## 3671       No    No              No              No    No
-## 3725       No    No              No              No    No
-## 4222       No    No              No              No    No
-## 4230       No    No              No              No    No
-## 4740       No    No              No              No    No
-## 4815       No    No             Yes              No    No
-## 5603       No    No              No              No    No
-## 5741       No    No              No              No    No
-## 5867       No   Yes              No              No    No
-## 6200       No    No              No              No    No
-## 6569       No    No              No              No    No
-## 6666       No    No              No              No    No
-## 7176       No   Yes              No              No    No
-## 7184       No    No              No              No    No
-## 7576       No    No              No              No    No
-## 8192       No    No              No              No    No
-## 8368       No    No              No              No    No
-## 8413       No    No              No              No    No
-## 8524       No    No              No              No    No
-## 8662       No    No              No              No    No
-## 9159       No    No              No              No    No
-## 9167       No    No              No              No    No
-## 9677       No    No              No              No    No
-## 9752       No    No             Yes              No    No
-## 9862       No    No              No              No    No
+## 482        No    No              No              No    No
+## 704        No   Yes              No              No    No
+## 1134       No    No              No              No    No
+## 1260       No   Yes              No              No    No
+## 1268       No    No              No              No    No
+## 1371       No    No              No              No    No
+## 1644       No    No              No              No    No
+## 2016       No    No              No              No    No
+## 2758       No    No              No              No    No
+## 2853       No    No              No              No    No
+## 3373       No    No              No              No    No
+## 3516       No    No              No              No    No
+## 3551       No    No              No              No    No
+## 3602       No    No             Yes              No    No
+## 3710       No    No              No              No    No
+## 3765       No    No              No              No    No
+## 4032       No    No              No              No    No
+## 4262       No    No              No              No    No
+## 4860       No    No              No              No    No
 ##      COMMERCIAL_LICENSE HAZMAT COMMERCIAL_VEHICLE ALCOHOL WORK_ZONE STATE
-## 442                  No     No                 No      No        No    MD
-## 824                  No     No                 No      No        No    MD
-## 1095                 No     No                 No      No        No    MD
-## 1220                 No     No                 No      No        No    MD
-## 1228                 No     No                 No      No        No    OH
-## 1331                 No     No                 No      No        No    MD
-## 1604                 No     No                 No      No        No    MD
-## 1977                 No     No                 No      No        No    MD
-## 2638                 No     No                 No      No        No    MD
-## 3255                 No     No                 No      No        No    MD
-## 3431                 No     No                 No      No        No    MD
-## 3476                 No     No                 No      No        No    MD
-## 3587                 No     No                 No      No        No    MD
-## 3671                 No     No                 No      No        No    MD
-## 3725                 No     No                 No      No        No    VA
-## 4222                 No     No                 No      No        No    MD
-## 4230                 No     No                 No      No        No    MD
-## 4740                 No     No                 No      No        No    MD
-## 4815                 No     No                 No      No        No    MD
-## 5603                 No     No                 No      No        No    MD
-## 5741                 No     No                 No      No        No    MD
-## 5867                 No     No                 No      No        No    MD
-## 6200                 No     No                 No      No        No    MD
-## 6569                 No     No                 No      No        No    MD
-## 6666                 No     No                 No      No        No    MD
-## 7176                 No     No                 No      No        No    MD
-## 7184                 No     No                 No      No        No    OH
-## 7576                 No     No                 No      No        No    MD
-## 8192                 No     No                 No      No        No    MD
-## 8368                 No     No                 No      No        No    MD
-## 8413                 No     No                 No      No        No    MD
-## 8524                 No     No                 No      No        No    MD
-## 8662                 No     No                 No      No        No    VA
-## 9159                 No     No                 No      No        No    MD
-## 9167                 No     No                 No      No        No    MD
-## 9677                 No     No                 No      No        No    MD
-## 9752                 No     No                 No      No        No    MD
-## 9862                 No     No                 No      No        No    MD
+## 482                  No     No                 No      No        No    MD
+## 704                  No     No                 No      No        No    MD
+## 1134                 No     No                 No      No        No    MD
+## 1260                 No     No                 No      No        No    MD
+## 1268                 No     No                 No      No        No    OH
+## 1371                 No     No                 No      No        No    MD
+## 1644                 No     No                 No      No        No    MD
+## 2016                 No     No                 No      No        No    MD
+## 2758                 No     No                 No      No        No    MD
+## 2853                 No     No                 No      No        No    MD
+## 3373                 No     No                 No      No        No    MD
+## 3516                 No     No                 No      No        No    MD
+## 3551                 No     No                 No      No        No    MD
+## 3602                 No     No                 No      No        No    MD
+## 3710                 No     No                 No      No        No    MD
+## 3765                 No     No                 No      No        No    VA
+## 4032                 No     No                 No      No        No    MD
+## 4262                 No     No                 No      No        No    MD
+## 4860                 No     No                 No      No        No    MD
 ##                VEHICLETYPE YEAR MAKE  MODEL       COLOR VIOLATION_TYPE
-## 442        02 - Automobile 2005  BMW     4S      SILVER       Citation
-## 824        02 - Automobile 2007  BMW     4S       WHITE       Citation
-## 1095       02 - Automobile 2001  BMW   525I        GRAY       Citation
-## 1220 05 - Light Duty Truck 2009  BMW     TK       BLACK       Citation
-## 1228       02 - Automobile 2000  BMW     X5       BLACK       Citation
-## 1331       02 - Automobile 2006  BMW  330CI BLUE, LIGHT       Citation
-## 1604       02 - Automobile 2004  BMW     CP      SILVER       Citation
-## 1977       02 - Automobile 2000  BMW    328      SILVER       Citation
-## 2638       02 - Automobile 2011  BMW   328I       BLACK       Citation
-## 3255       02 - Automobile 2001  BMW  330XI       BLACK       Citation
-## 3431       02 - Automobile 2001  BMW     4S         N/A       Citation
-## 3476       02 - Automobile 2013  BMW    4DR        BLUE       Citation
-## 3587       02 - Automobile 2010  BMW    2DR         TAN       Citation
-## 3671       02 - Automobile 2008  BMW 4 DOOR      SILVER       Citation
-## 3725       02 - Automobile 2007  BMW   328I       BLACK       Citation
-## 4222       02 - Automobile 2008  BMW  335X1      SILVER       Citation
-## 4230       02 - Automobile 2011  BMW   328I       BLACK       Citation
-## 4740 05 - Light Duty Truck 2001  BMW     X5       BLACK       Citation
-## 4815       02 - Automobile 2008  BMW   328I       WHITE       Citation
-## 5603       02 - Automobile 2005  BMW     4S      SILVER       Citation
-## 5741       02 - Automobile 2001  BMW   525I        GRAY       Citation
-## 5867       02 - Automobile 2007  BMW     4S       WHITE       Citation
-## 6200       02 - Automobile 2000  BMW    328      SILVER       Citation
-## 6569       02 - Automobile 2006  BMW  330CI BLUE, LIGHT       Citation
-## 6666       02 - Automobile 2004  BMW     CP      SILVER       Citation
-## 7176 05 - Light Duty Truck 2009  BMW     TK       BLACK       Citation
-## 7184       02 - Automobile 2000  BMW     X5       BLACK       Citation
-## 7576       02 - Automobile 2011  BMW   328I       BLACK       Citation
-## 8192       02 - Automobile 2001  BMW  330XI       BLACK       Citation
-## 8368       02 - Automobile 2001  BMW     4S         N/A       Citation
-## 8413       02 - Automobile 2013  BMW    4DR        BLUE       Citation
-## 8524       02 - Automobile 2010  BMW    2DR         TAN       Citation
-## 8662       02 - Automobile 2007  BMW   328I       BLACK       Citation
-## 9159       02 - Automobile 2008  BMW  335X1      SILVER       Citation
-## 9167       02 - Automobile 2011  BMW   328I       BLACK       Citation
-## 9677 05 - Light Duty Truck 2001  BMW     X5       BLACK       Citation
-## 9752       02 - Automobile 2008  BMW   328I       WHITE       Citation
-## 9862       02 - Automobile 2008  BMW 4 DOOR      SILVER       Citation
+## 482        02 - Automobile 2005  BMW     4S      SILVER       Citation
+## 704        02 - Automobile 2007  BMW     4S       WHITE       Citation
+## 1134       02 - Automobile 2001  BMW   525I        GRAY       Citation
+## 1260 05 - Light Duty Truck 2009  BMW     TK       BLACK       Citation
+## 1268       02 - Automobile 2000  BMW     X5       BLACK       Citation
+## 1371       02 - Automobile 2006  BMW  330CI BLUE, LIGHT       Citation
+## 1644       02 - Automobile 2004  BMW     CP      SILVER       Citation
+## 2016       02 - Automobile 2000  BMW    328      SILVER       Citation
+## 2758       02 - Automobile 2011  BMW   328I       BLACK       Citation
+## 2853       02 - Automobile 2010  BMW    2DR         TAN       Citation
+## 3373       02 - Automobile 2001  BMW  330XI       BLACK       Citation
+## 3516       02 - Automobile 2013  BMW    4DR        BLUE       Citation
+## 3551       02 - Automobile 2001  BMW     4S         N/A       Citation
+## 3602       02 - Automobile 2008  BMW   328I       WHITE       Citation
+## 3710       02 - Automobile 2008  BMW 4 DOOR      SILVER       Citation
+## 3765       02 - Automobile 2007  BMW   328I       BLACK       Citation
+## 4032       02 - Automobile 2011  BMW   328I       BLACK       Citation
+## 4262       02 - Automobile 2008  BMW  335X1      SILVER       Citation
+## 4860 05 - Light Duty Truck 2001  BMW     X5       BLACK       Citation
 ##            CHARGE                ARTICLE CONTRIBUTED_TO_ACCIDENT  RACE
-## 442     13-401(h) Transportation Article                      No WHITE
-## 824      21-801.1 Transportation Article                      No WHITE
-## 1095  22-412.3(b) Transportation Article                      No WHITE
-## 1220     21-801.1 Transportation Article                      No WHITE
-## 1228    16-101(a) Transportation Article                      No WHITE
-## 1331 21-1124.1(b) Transportation Article                      No WHITE
-## 1604    13-401(h) Transportation Article                      No WHITE
-## 1977    16-303(h) Transportation Article                      No WHITE
-## 2638    13-411(a) Transportation Article                      No WHITE
-## 3255    16-112(c) Transportation Article                      No WHITE
-## 3431   21-201(a1) Transportation Article                      No WHITE
-## 3476   21-902(a1) Transportation Article                      No WHITE
-## 3587     21-801.1 Transportation Article                      No WHITE
-## 3671     21-801.1 Transportation Article                      No WHITE
-## 3725   21-902(b1) Transportation Article                      No WHITE
-## 4222    16-303(h) Transportation Article                      No WHITE
-## 4230    13-401(h) Transportation Article                      No WHITE
-## 4740    13-409(b) Transportation Article                      No WHITE
-## 4815    16-303(c) Transportation Article                     Yes WHITE
-## 5603    13-401(h) Transportation Article                      No WHITE
-## 5741  22-412.3(b) Transportation Article                      No WHITE
-## 5867     21-801.1 Transportation Article                      No WHITE
-## 6200    16-303(h) Transportation Article                      No WHITE
-## 6569 21-1124.1(b) Transportation Article                      No WHITE
-## 6666    13-401(h) Transportation Article                      No WHITE
-## 7176     21-801.1 Transportation Article                      No WHITE
-## 7184    16-101(a) Transportation Article                      No WHITE
-## 7576    13-411(a) Transportation Article                      No WHITE
-## 8192    16-112(c) Transportation Article                      No WHITE
-## 8368   21-201(a1) Transportation Article                      No WHITE
-## 8413   21-902(a1) Transportation Article                      No WHITE
-## 8524     21-801.1 Transportation Article                      No WHITE
-## 8662   21-902(b1) Transportation Article                      No WHITE
-## 9159    16-303(h) Transportation Article                      No WHITE
-## 9167    13-401(h) Transportation Article                      No WHITE
-## 9677    13-409(b) Transportation Article                      No WHITE
-## 9752    16-303(c) Transportation Article                     Yes WHITE
-## 9862     21-801.1 Transportation Article                      No WHITE
+## 482     13-401(h) Transportation Article                      No WHITE
+## 704      21-801.1 Transportation Article                      No WHITE
+## 1134  22-412.3(b) Transportation Article                      No WHITE
+## 1260     21-801.1 Transportation Article                      No WHITE
+## 1268    16-101(a) Transportation Article                      No WHITE
+## 1371 21-1124.1(b) Transportation Article                      No WHITE
+## 1644    13-401(h) Transportation Article                      No WHITE
+## 2016    16-303(h) Transportation Article                      No WHITE
+## 2758    13-411(a) Transportation Article                      No WHITE
+## 2853     21-801.1 Transportation Article                      No WHITE
+## 3373    16-112(c) Transportation Article                      No WHITE
+## 3516   21-902(a1) Transportation Article                      No WHITE
+## 3551   21-201(a1) Transportation Article                      No WHITE
+## 3602    16-303(c) Transportation Article                     Yes WHITE
+## 3710     21-801.1 Transportation Article                      No WHITE
+## 3765   21-902(b1) Transportation Article                      No WHITE
+## 4032    13-401(h) Transportation Article                      No WHITE
+## 4262    16-303(h) Transportation Article                      No WHITE
+## 4860    13-409(b) Transportation Article                      No WHITE
 ##      GENDER    DRIVER_CITY DRIVER_STATE DL_STATE         ARREST_TYPE
-## 442       M NORTH BETHESDA           MD       MD   A - Marked Patrol
-## 824       M   GAITHERSBURG           MD       MD    Q - Marked Laser
-## 1095      M       DAMASCUS           MD       MD   A - Marked Patrol
-## 1220      M       BETHESDA           MD       MD    Q - Marked Laser
-## 1228      M       COLUMBUS           OH       OH   A - Marked Patrol
-## 1331      M  SILVER SPRING           MD       MD B - Unmarked Patrol
-## 1604      M     GERMANTOWN           MD       MD   A - Marked Patrol
-## 1977      M  SILVER SPRING           MD       MD   A - Marked Patrol
-## 2638      M        POTOMAC           MD       MD   A - Marked Patrol
-## 3255      M       MT. AIRY           MD       MD   A - Marked Patrol
-## 3431      M      ANNAPOLIS           MD       MD   A - Marked Patrol
-## 3476      M     GERMANTOWN           MD       MD    Q - Marked Laser
-## 3587      M      N POTOMAC           MD       MD    Q - Marked Laser
-## 3671      M     CABIN JOHN           MD       MD    Q - Marked Laser
-## 3725      M       BETHESDA           MD       MD   A - Marked Patrol
-## 4222      M      ROCKVILLE           MD       MD B - Unmarked Patrol
-## 4230      M  SILVER SPRING           MD       MD   A - Marked Patrol
-## 4740      M   GAITHERSBURG           MD       MD   A - Marked Patrol
-## 4815      M       COLUMBIA           MD       MD   A - Marked Patrol
-## 5603      M NORTH BETHESDA           MD       MD   A - Marked Patrol
-## 5741      M       DAMASCUS           MD       MD   A - Marked Patrol
-## 5867      M   GAITHERSBURG           MD       MD    Q - Marked Laser
-## 6200      M  SILVER SPRING           MD       MD   A - Marked Patrol
-## 6569      M  SILVER SPRING           MD       MD B - Unmarked Patrol
-## 6666      M     GERMANTOWN           MD       MD   A - Marked Patrol
-## 7176      M       BETHESDA           MD       MD    Q - Marked Laser
-## 7184      M       COLUMBUS           OH       OH   A - Marked Patrol
-## 7576      M        POTOMAC           MD       MD   A - Marked Patrol
-## 8192      M       MT. AIRY           MD       MD   A - Marked Patrol
-## 8368      M      ANNAPOLIS           MD       MD   A - Marked Patrol
-## 8413      M     GERMANTOWN           MD       MD    Q - Marked Laser
-## 8524      M      N POTOMAC           MD       MD    Q - Marked Laser
-## 8662      M       BETHESDA           MD       MD   A - Marked Patrol
-## 9159      M      ROCKVILLE           MD       MD B - Unmarked Patrol
-## 9167      M  SILVER SPRING           MD       MD   A - Marked Patrol
-## 9677      M   GAITHERSBURG           MD       MD   A - Marked Patrol
-## 9752      M       COLUMBIA           MD       MD   A - Marked Patrol
-## 9862      M     CABIN JOHN           MD       MD    Q - Marked Laser
+## 482       M NORTH BETHESDA           MD       MD   A - Marked Patrol
+## 704       M   GAITHERSBURG           MD       MD    Q - Marked Laser
+## 1134      M       DAMASCUS           MD       MD   A - Marked Patrol
+## 1260      M       BETHESDA           MD       MD    Q - Marked Laser
+## 1268      M       COLUMBUS           OH       OH   A - Marked Patrol
+## 1371      M  SILVER SPRING           MD       MD B - Unmarked Patrol
+## 1644      M     GERMANTOWN           MD       MD   A - Marked Patrol
+## 2016      M  SILVER SPRING           MD       MD   A - Marked Patrol
+## 2758      M        POTOMAC           MD       MD   A - Marked Patrol
+## 2853      M      N POTOMAC           MD       MD    Q - Marked Laser
+## 3373      M       MT. AIRY           MD       MD   A - Marked Patrol
+## 3516      M     GERMANTOWN           MD       MD    Q - Marked Laser
+## 3551      M      ANNAPOLIS           MD       MD   A - Marked Patrol
+## 3602      M       COLUMBIA           MD       MD   A - Marked Patrol
+## 3710      M     CABIN JOHN           MD       MD    Q - Marked Laser
+## 3765      M       BETHESDA           MD       MD   A - Marked Patrol
+## 4032      M  SILVER SPRING           MD       MD   A - Marked Patrol
+## 4262      M      ROCKVILLE           MD       MD B - Unmarked Patrol
+## 4860      M   GAITHERSBURG           MD       MD   A - Marked Patrol
 ##                                GEOLOCATION
-## 442  (39.0450066666667, -77.1205283333333)
-## 824  (39.0810966666667, -77.2935166666667)
-## 1095 (39.0324616666667, -77.1359133333333)
-## 1220      (38.96248055, -77.1063928833333)
-## 1228                                  null
-## 1331 (39.0666566666667, -77.1279716666667)
-## 1604 (39.1183266666667, -77.2050466666667)
-## 1977 (39.0641766666667, -77.0692316666667)
-## 2638 (38.9839152333333, -77.0925711833333)
-## 3255 (38.9965283333333, -77.0788666666667)
-## 3431 (38.9945943833333, -77.0297498666667)
-## 3476                                  null
-## 3587 (39.1279473666667, -77.1612220333333)
-## 3671        (39.064949, -77.1564768166667)
-## 3725            (38.9843738, -77.09154725)
-## 4222 (39.1176483333333, -77.1839033333333)
-## 4230 (39.0619933333333, -77.0531516666667)
-## 4740                                  null
-## 4815        (39.062265, -77.1578683333333)
-## 5603 (39.0450066666667, -77.1205283333333)
-## 5741 (39.0324616666667, -77.1359133333333)
-## 5867 (39.0810966666667, -77.2935166666667)
-## 6200 (39.0641766666667, -77.0692316666667)
-## 6569 (39.0666566666667, -77.1279716666667)
-## 6666 (39.1183266666667, -77.2050466666667)
-## 7176      (38.96248055, -77.1063928833333)
-## 7184                                  null
-## 7576 (38.9839152333333, -77.0925711833333)
-## 8192 (38.9965283333333, -77.0788666666667)
-## 8368 (38.9945943833333, -77.0297498666667)
-## 8413                                  null
-## 8524 (39.1279473666667, -77.1612220333333)
-## 8662            (38.9843738, -77.09154725)
-## 9159 (39.1176483333333, -77.1839033333333)
-## 9167 (39.0619933333333, -77.0531516666667)
-## 9677                                  null
-## 9752        (39.062265, -77.1578683333333)
-## 9862        (39.064949, -77.1564768166667)</code></pre>
+## 482  (39.0450066666667, -77.1205283333333)
+## 704  (39.0810966666667, -77.2935166666667)
+## 1134 (39.0324616666667, -77.1359133333333)
+## 1260      (38.96248055, -77.1063928833333)
+## 1268                                  null
+## 1371 (39.0666566666667, -77.1279716666667)
+## 1644 (39.1183266666667, -77.2050466666667)
+## 2016 (39.0641766666667, -77.0692316666667)
+## 2758 (38.9839152333333, -77.0925711833333)
+## 2853 (39.1279473666667, -77.1612220333333)
+## 3373 (38.9965283333333, -77.0788666666667)
+## 3516                                  null
+## 3551 (38.9945943833333, -77.0297498666667)
+## 3602        (39.062265, -77.1578683333333)
+## 3710        (39.064949, -77.1564768166667)
+## 3765            (38.9843738, -77.09154725)
+## 4032 (39.0619933333333, -77.0531516666667)
+## 4262 (39.1176483333333, -77.1839033333333)
+## 4860                                  null</code></pre>
+</div>
+<div id="what-combination-of-race-and-gender" class="section level3">
+<h3>What combination of race and gender</h3>
+<pre class="r"><code>df2 &lt;- df %&gt;%  group_by(VIOLATION_TYPE, RACE) %&gt;% summarise(count = n()) %&gt;% arrange(VIOLATION_TYPE, count) %&gt;% group_by(VIOLATION_TYPE) %&gt;% mutate(countT = sum(count)) %&gt;% group_by(RACE, add=TRUE) %&gt;% mutate(per=round(100*count/countT,2))
+                                                                                                                  
+ggplot(df2, aes(RACE, y = per, color = RACE, fill=RACE)) + geom_bar(stat = &quot;identity&quot;) + facet_wrap(~VIOLATION_TYPE) </code></pre>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAMAAADDuCPrAAACiFBMVEUAAAAAAC4AADoAAFIAAGYALlIALnMAOjoAOmYAOpAAUlIAUpEAZmYAZrYAujgAv8QuAAAuUlIuc3Muc5Euc686AAA6OgA6Ojo6ZmY6kLY6kNtSAABSLgBSUgBSkcxhnP9mAABmOgBmZjpmZmZmkJBmtttmtv9zLgBzr8x/f39/f4J/f4V/f4Z/f4p/f45/f5F/f5V/f51/f6R/f6t/gn9/gqF/g6x/hn9/iIp/iop/ird/jn9/jpV/jsF/kZV/kaF/kcF/lY5/lZ1/laR/lat/lbd/lcF/lch/ndZ/pNZ/q7p/q8h/q9aCf3+CodqGf3+GlZGGrOuIf3+JlX+Kf3+Kin+Kt8iKt+uOf3+OkX+OlZWOuv+OweuQOgCQZgCQtpCQ27aQ29uQ2/+RUgCRf3+RkcyRoZGRweuRzK+RzMyVf3+Vjn+VlcGVnY6VpJWVq6uVt7eVwciVwdqVweuVyP+df3+dnX+d1v+hkX+h2v+kf3+krJWk1v+rf3+rlX+rq3+rq5Wrq6uruqurwcGryMGr1tar1uur1v+shn+slX+spH+syKus6/+uhH+ut5Wvcy6vr6+vzMy2ZgC2tma225C2/9u2//+3in+3lX+3nwC3roq3t5W36//Bjn/BkX/BlX/ByKvB1sHB69bB6+vB6//IlX/Iq3/IwZXMkVLMr3PMzJHMzK/MzMzWq3/W1qvW68HW/9bW/+vW///awZXa///bkDrbtmbb///l5eXrnYHrrIbrt4rrwY7rwZHrwZXryJXr1qvr68Hr/9br/+vr///y8vL1ZOP4dm3/tmb/yJX/1p3/1qT/1qv/2qH/25D/66z/68H//7b//7r//8j//9b//9v//+v///9kbphPAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nO29+4MkWXaQl5odw47HjRYzZcslM9oV0KtctKv2NtgWWLYBqUHQYi0bzNp4jD0tLKt4GNMGY0MLLAMt/KChgJHEgtpIbdy72uIxuDzLqwDTA2Uot3utnq5/h4gbcSJuPDIiMu65kffG/b4fpiuzbpw4mSfONzeetbkGAIBZbA6dAABArCBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSBQAICZIFAAgJkgUACAmSwr0K9CsFClGFi0XWEcBAoFVCkGFm1XGAeBQgFVioFF2xXGQaBQQJViYNF2hXEQKBRQpRhYtF1hHAQKBVQpBhZtVxgHgUIBVYqBRdsVxkGgUECVYmDRdoVxECgUUKUYWLRdYRwECgVUKQYWbVcYB4FCAVWKgUXbFcZBoH185Zs3Gd/wbfKq+Okrv71v6G+3RsRMTFUq6lNSfvU/82nz6q0dI8pfG37On26HiqZ8i7YrjINAu9TN97EfKl6b/rq3ebs7tngTgS5Lj0AfVa/f7h1hC3RTVdIa1lPcAFm0XWEcBNrhy58ou+lRY2aS9Vq3x3rfjJOYqtT92p9uNm/m/2bFMzXrjMgEWk5OqzFFqd9q/BA6i7YrjINA22StJ7t41o8INCQG9Jj96s3hEeaXb5X/VvW9F8ccdNF2hXEQaJt7ljSfWl2FQMOh87V/+RPVvsIjc+BlUKDZGFNju9TNF8GyaLvCOAi0RaPzfubTeVOZI5z3zIGyN78qR9PKw6LFm9Ux0Ef1eYynWSM/jej8RExVGhJo8eMUgWb77W/bIWL4f+Gi7QrjINAWT8szRxZNgVZnK97sCFROSZgIWaBfGOfpiUNnMk6fHpvzx2GBFrPNVqnvFUdRw2bRdoVxEGiLR909uUKPZUtmE5W3zHsb681iRNaj+T/ZiKI9zVw0G9ExcpDEVKXek0iN73nKMdCWMXsqHx6LtiuMg0Bb9MxDGgKVNiv2+BoCfVrurhe/kvPCTyPZiY+pSo2LlOSISeMSz84IS6BPS9fea55479n3CI9F2xXGQaAtxgRav9kRaLWo+aHWKQLVpkeglUJ7rgMtBdq6dLSxU/9VBApzQKAtpgnU9GdLoHVDmlnq0+oy/DgOgsZUpZ3f6T3xZd8ufEu5CBTcQaAtxo6BWp3YEmjds6YVEag/Br7T8kD0zmOgjzbV/yE5BgrOINAWzXnI02I20zyJZPYBu8dAEehiDH2nxRmi3SeRnlYHSp82jclZeNgfBNqi2XnmepeGQO+VXuwKlF34xWh/p9lXX8vPiHDgLHw1B22OiaNOi7YrjINA29h7csU1S7ZAqzZ72tmF75xEQqC+6Hynj6z9hjGB5sdg3i5HWnsb92I4BIpAQwOBtuneC98n0LILBy9jQqC+6LkTqZqCNnYNaqxTRtWludwLD64g0A5PN62nMVUCfcv0YXmrtQi0PkravpAegfqi+50+sh5rN/owEblEl6cxgSsItEtxnqi6XrDWY9538stf8OnSpwO3ciJQTzSu8ixk+Kj5sjOidStn+YLngYIbCLQPOdVevLL0aE4pFTe83Ct37/MXux4mUiwdR2/GVKUegcqDCcoDmcMCLW/ErQfGca/DVxFocCBQKKBKMbBou8I4CBQKqFIMLNquMA4ChQKqFAOLtiuMg0ChgCrFwKLtCuMgUCigSjGwaLvCOAgUCqhSDCzarjAOAoUCqhQDi7YrjINAoYAqxcCi7QrjIFAooEoxsGi7wjjLCvRr05g80GOE5JKgSjEksWi7wjjLCvTDaUwe6DFCcklQpRiSWLRdYRxmoCQhA6lS+Eks2q4wDgIlCRlIlcJPYtF2hXEQKEnIQKoUfhKLtiuMg0BJQgZSpfCTWLRdYRwEShIykCqFn8Si7QrjIFCSkIFUKfwkFm1XGAeBkoQMpErhJ7Fou8I4CJQkZCBVCj+JRdsVxkGgJCEDqVL4SSzarjAOAiUJGUiVwk9i0XaFcRAoSchAqhR+Eou2K4yDQElCBlKl8JNYtF1hHARKEjKQKoWfxKLtCuMgUJKQgVQp/CQWbVcYB4GShAykSuEnsWi7wjgIlCRkIFUKP4lF2xXGQaAkIQOpUvhJLNquMA4CJQkZSJXCT2LRdoVxEChJyECqFH4Si7YrjINASUIGUqXwk1i0XWEcBEoSMpAqhZ/Eou0K4yBQkpCBVCn8JBZtVxgHgZKEDKRK4SexaLvCOAiUJGQgVQo/iUXbFcZBoCQhA6lS+Eks2q4wDgIlCRlIlcJPYtF2hXEQKEnIQKoUfhKLtiuMg0BJQgZSpfCTWLRdYRwEShIykCqFn8Si7QrjIFCSkIFUKfwkFm1XGEdJoBfbu+VPV9uMuzuGaW9OHiMklwRViiEJnXYFNXQE+uJEnHm2Ndx+v3ec9ubkMUJySVClGJJQaVfQQ0Wgrx7LpPNiu71vfHrnWd9A7c3JY4TkkqBKMSSh0a6giIpAL2Sv/eWD3J/GoA/7BmpvTh4jJJcEVYohCY12BUU0BPrywe0/XAj0Svbdz/oPg2pvTh4jJJcEVYohCYV2BU00BHq2fVgK80x23S/6j4Jqb04eIySXBFWKIQmFdgVNFAR6lcmzEOirxzLxvNreetIzVHtz8hghuSSoUgxJuLcrqOIu0JcPMldWAr1fvPnipBLo1sJ5ZQAA4eAu0LNcmoVA5RwSAgWAFHAW6JU57NkVaO9peO0dGo8RkkuCKsWQhGu7gjKuAn312Ew1B2agNtqbk8cIySVBlWJIwrFdQRtXgV7I6fedx0BttDcnjxGSS4IqxZCEY7uCNo4CfXFSXK7UPQvPZUyRJUGVYkjCrV1BHUeBXlhniO48s68D7b2XU3tz8hghuSSoUgxJuLUrqKMrUO5EijcJqhRDEm7tCuooPc7ujHvhY0+CKsWQhE67ghq6AuVpTPEmQZViSEKnXUENZYHyPNBok6BKMSSh066ghrZAeSJ9rElQpRiS0GlXUIO/iUQSMpAqhZ/Eou0K4yBQkpCBVCn8JBZtVxgHgZKEDKRK4SexaLvCOAiUJGQgVQo/iUXbFcZBoCQhA6lS+Eks2q4wDgIlCRlIlcJPYtF2hXEQKEnIQKoUfhKLtiuMg0BJQgZSpfCTWLRdYRwEShIykCqFn8Si7QrjIFCSkIFUKfwkFm1XGAeBkoQMpErhJ7Fou8I4CJQkZCBVCj+JRdsVxkGgJCEDqVL4SSzarjAOAiUJGUiVwk9i0XaFcRAoSchAqhR+Eou2K4yDQElCBlKl8JNYtF1hHARKEjKQKoWfxKLtCuMgUJKQgVQp/CQWbVcYB4HGn8Q/csBeFVUKP4lF2xXGQaDRJ+HiT8ugVCmGJBZtVxgHgUafBAJNKIlF2xXGQaDRJ4FAE0pi0XaFcRBo9Ekg0ISSWLRdYRwEGn0SCDShJBZtVxgHgUafBAJNKIlF2xXGQaDRJ4FAE0pi0XaFcRBo9Ekg0ISSWLRdYZxlBfrhNCYP9BghniTcBGqtiiqFn8Si7QrjMAONPglmoAklsWi7wjgINPokEGhCSSzarjAOAo0+CQSaUBKLtiuMg0CjTwKBJpTEou0K4yDQ6JNAoAklsWi7wjgINPokEGhCSSzarjAOAo0+CQSaUBKLtiuMg0CjTwKBJpTEou0K4yDQ6JNAoAklsWi7wjgINPokEGhCSSzarjAOAo0+CQSaUBKLtiuMg0CjTwKBJpTEou0K4yDQ6JNAoAklsWi7wjgINPokghboTzigloTnCAg0YeIVKK1ZErJAXYo0qUzRVEkpwqLtCuNEK1BaU0CgTiBQcACBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGAWBnm2329vvy6ur7NX27o6hipsTrSkgUCcQKDjgLNCXD7aG+8XLs+JVLdQGipsTrSkgUCcQKDjgKtBXj40sL7bbh/nLC2PSFyfbO8/6RituTrSmgECdQKDggKtAr7a3nuT/npnd9mw6amaimUEf9o1W3JxoTQGBOoFAwQFXgZ6VxzsvzJzzSvbdz/oPgypuTrSmgECdQKDggNZZ+EKgZ7LrftF/FFRxc6I1BQTqBAIFB5QE+upxPuUs/psje/YtFDcnWlNAoE4gUHBAR6DlqaTsn/Jk/IuTSqBbC5WVFbi1pmIiB8dNoH5zo0qwbjQEml/6aXbd5RwSAl0SBApwKLQEanbZbYH2noZX3KFxa02lJHxHYBdeIwnfEdiFTxitk0hnuUF7Z6A2ipsTrSkgUCcQKDigJVBz/qj3GKiN4uZEawoI1AkECg6oPUwkv47JPgvPZUwIlCqpR9BqV1BCVaD2daC993Iqbk60poBAnUCg4ICjQOud9ot88smdSLoREKhGEr4jINCEcZ2Byi1Hxfkj7oXXjYBANZLwHQGBJoyrQDNl5nPNbCZq9tl5GpNqBASqkYTvCAg0YZyPgWaytJ8AyvNANSMgUI0kfEdAoAmj9ET6eo+dJ9IrRkCgGkn4joBAE4a/ieSShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOMC2ESpEQaGggUJckfEdAoBpJ+I5wmCpBECBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBJrx8xxQ+hgKIRDoOkGgLkn4joBA3fw5xaCxVgmCAIG6JOE7AgJFoAg0aBCoSxK+IyBQBIpAgwaBuiThOwICRaAINGiWFeiH05gy0K01lZLwHWFSCLfWtFYVZpXcBKrzMRRCqFcJgoAZqEsSviMwA2UGuqtKEAQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBk7RA/XZmtK2pmBsCFRDoOklZoLQmAo23ShAECgK92GbclVdXjVctFDdIWlNAoElWCYLAWaAvH2wNt56Yl2fFq9vv9w5W3CBpTQGBJlklCAJXgb56bNT54mR759m1mY3er191UNwgaU0BgSZZJQgCV4FelVPPzJkPzXT0fv2qi+IGSWsKCDTJKkEQuAr0rJxrZjPRu7lOy333s/7DoIobJK0pINAkqwRB4C7Qu9YPotNsV773KKjiBklrCgg0ySpBEGhdxmR23otpaI7s2bdQ3CBpTQGBJlklCAItgRpjZgK9X7x8cVIJdGuhtLIct9Y0IdxaU/GzuOHWmn5zo0pCyFWC+SgJNJuAZjvvcg4JgS5JyK1JlYSQqwTz0RFoZs78mKct0N7T8Iq7RG6taUK4tabOx1AI4daa1qqo0kzYhU8XFYFm4jQTzt4ZqI3iBklrCgg0ySpBEGgINL8Zycw3e4+B2ihukLSmgECTrBIEgYJAs9310pb2WXguY4q2NRVzo0oCAl0n7gKt/dm4DrT3Xk7FDZLWFBBoklWCIHAWaObPerLJnUj7fgyFEAg0ySpBELgKtDz/Xr/iXvi9PoZCCASaZJUgCFwFetG85YinMe35MRRCINAkqwRB4ChQeRpo9RRlnge638dQCIFAk6wSBIGjQLO5ZlOgPJF+v4+hEAKBJlklCAL+JhKtKauiSjNBoOmCQGlNWRVVmgkCTRcESmvKqqjSTBBouiBQWlNWRZVmgkDTBYHSmrIqqjQTBJouCJTWlFVRpZkg0HRBoLSmrIoqzQSBpgsCpTVlVVRpJgg0XRAorSmrokozQaDpgkBpTVkVVZoJAk0XBEpryqqo0kwQaLogUFpTVkWVZoJA0wWB0pqyKqo0EwSaLgiU1pRVUaWZINB0QaC0pqyKKs0EgaYLAqU1ZVVUaSYINF0QKK0pq6JKM0Gg6YJAaU1ZFVWaCQJNFwRKa8qqqNJMEGi6IFBaU1ZFlWaCQNMFgdKasiqqNBMEmi4IlNaUVVGlmSDQdEGgtKasiirNBIGmCwKlNWVVVGkmCDRdECitKauiSjNBoOmCQGlNWRVVmgkCTRcESmvKqqjSTBBouiwr0A+nMWWgW2uaEG6tqfMxFEK4taa1Kqo0k4NUCYKAGehcdD6GQgi31rRWRZVmwgw0XRAorSmrokozQaDpgkBpTVkVVZoJAk0XBEpryqqo0kwQaLogUFpTVkWVZoJA0wWB0pqyKqo0k/AE+vVPbipee7d+/zJ/47gx9PlR/t7r73UX3GxuurV7CiBQWlNWRZVmErZAN5sb1fun+cs3PqgHFvqs30Wge4JAaU1ZFVWaSegCreacxdvWlPTSGmQMikD3BIHSmrIqqjST4AUqO+iXrRlpPf+UtxHoniBQWlNWRZVmEqZAS01eWnPObA/+jf+09ulH78j01Hgzfzv/4bg3JPSCQGlNWRVVmknQAjXHPYupZD7hPL6sZ5b569KtxqXHCHRvECitKauiSjOJRaDnuS+tX51bh0efH1XHQBHoHiBQWlNWRZVmErRAL6tjoPksM7PkaTXtPG1e4yQL9py9h10gUFpTVkWVZhKmQDsmNHvwhVHNJDMXqhwO7V0QgY6DQGlNWRVVmknoAi0teV5MOMuJKAJVAYHSmrIqqjSTwAVaXjhfifO8PCiKQBVAoLSmrIoqzSRogVanhKpd93xX3rhxxzFQTiLtAQKlNWVVVGkmYQr0RnlxkkwyTzt79ZyFdweB0pqyKqo0k2AFahu05+5O6zpQo1euA90fBEpryqqo0kzCFWhhUPPTZcOf5mho606k3KUIdE8QKK0pq6JKMwlYoMXt7vkpI+uAZy5O8/PYvfCcRRoFgdKasiqqNJOQBSr3wufvVM+xu+yblpo9fQS6JwiU1pRVUaWZBC1Qc3TzjQ/sE0bm18WR0eHngSLQURAorSmrokozCVugxon/yjuNS5bq++PLSWj/E+kR6CgIlNaUVVGlmYQnUFgKBEpryqqo0kwQaLogUFpTVkWVZoJA0wWB0pqyKqo0EwSaLgiU1pRVUaWZINB0QaC0pqyKKs0EgaaLjkCvtvfrHzPu7hinuEHSmgICTbJKEAQqAn35oBLo2dZw+/3egYobJK0pINAkqwRBoCHQzJ8i0Avz04uT7Z1nfSMVN0haU0CgSVYJgkBBoJkuRaAyFc3eetg3VHGDpDUFBJpklQb5x3vh1v9p4y7QbKf9u3+4FOiV7Luf9R8GVdwgaU0BgSZZpQH20ycCdcFZoNlk8/6rx6VAz2TX/aL/KKjiBklrCgg0ySoNgECXw12gv/PZtQg0+7eceF5tbz3pGay4QdKaAgJNskoDINDlUDkLbwm0PJn04qQS6NZCY2Ulbq1pQri1puJnccOtNf3mRpWEJauEQJdDVaD15UwIdDkQKFVqgkCXw5tAe0/DK+4SubWmCeHWmjofQyGEW2taq6JKM2EXPl38z0BtFDdIWlNAoElWaQAEuhz+j4HaKG6QtKaAQJOs0gAIdDm0BVqdhecypmhbUzE3qiQg0HWiKlD7OtDeezkVN0haU0CgSVZpAAS6HLoC5U6kfT+GQggEmmSVBkCgy6ErUO6F3/djKIRAoElWaQAEuhy6AuVpTPt+DIUQCDTJKg2AQJdDWaA8D3TPj6EQAoEmWaUBEOhyaAuUJ9Lv9zEUQiDQJKs0AAJdDv4mEq0pq6JKM1mRQM83mxvWy4/e2eQcF6+eH732bs+4bNDr79UB3vhgTytEDQKlNWVVVGkm6xFoLsxahrkmS27mL2uBNsblL27UiyBQfyhukLSmgECTrNIA8wX6/OjjnypkmXNZivH50caYsxZoY5yZpsoLBOoTxQ2S1hQQaJJVGmC+QM83N2oDZmIs992//klj0lqg7XH1fBSB+kRxg6Q1BQSaZJUGmC3QTJQ37WmmdcgzF2T1RnNcJtBvOpKdeATqE8UNktYUEGiSVRpgtkAvM0/W805LoMWP1RvNcflP57ITj0B9orhB0poCAk2ySgPMFuhpPo88l93xTIxNGVYC7Yw7rs7EI1CfKG6QtKbgUaD7dqKNCUCVhBgEmu+Zm1NG5Rmhy03jnHwl0NY4Mxd9Xu7EI1CfKG6QtKbgT6Au/iwMSpWEGARazCmtiedlcQ2TvBSBtsYVO/PlTjwC9YniBklrCgg0ySoNMFOgmQjNJPJyUx37FIU2rgNtjysEWu7EI1CfKG6QtKaAQJOs0gAzBSr75Nke+rEd7lRuRioF2h5Xnk4qduIRqE8UN0haU0CgSVZpgJkCre87ahz5vDaKtM7Ct8fJ+XizE49AfaK4QdKaAgJNskoDzBNoNqGsudmMWEw2C4F2xolAs1+8/h4C9YniBklrCgg0ySoNME+g9aHP4sYjOdRpMBcuFQJtj6vvWLrc5BeEIlB/KG6QtKaAQJOs0gDzBHpaq+/cOPLc2pO3BNoZV19Sf7p57VsRqEcUN0haU0CgSVZpgFkCtU8dPT8q9tirKWhx3sgItDuucc/8BoF6RHGDpDUFBJpklQaYJVB7vlldkrSRCz/rh4l0x9UCNVc9IVB/KG6QtKaAQJOs0gBzBNo44pmLsLgqXigfa/fauz3jLIHmlzwhUH8obpC0poBAk6zSAHMEWt/AmVOeHiqvAZU5Zy7QnnG2QLM3EKg/FDdIWlNAoElWaYA5AoV5IFBaU1bVqRICnQYCTRcESmvKqjpVQqDTQKDpgkBpTVlVp0oIdBoINF0QKK0pq+pUCYFOA4GmCwKlNWVVnSoh0Gkg0HRBoLSmrKpTJQQ6DQSaLocSqGtn0poVCDTJKg2wb6U8dXsSHEigtOY0EChVQqAhs6xAPxTcWjOP4NaaJgm31vxwFOvzzmVKCLfWtFZFlWZykCoNsG+lPHV7EjADnYvOxEQhhFtrWquiSjNhBpouCPTQrfktDvhpTaq0J+EJdL/v2VO3JwECPXBruvizMCgCRaBN9v2ePXV7EiBQBNpuTaq0Jwg0XRAoAm23JlXaEwSaLggUgbZbkyrtCQJNFwSKQNutSZV0y/Q1L1UaYN/v2VO3JwECRaDt1qRKMVRpgH2/Z0/dngQIlNZstyZViqFKA+z7PXvq9iRAoLRmuzWpUgxVGmDf79lTtycBAqU1261JlWKo0gD7fs+euj0JECit2W5NqhRDlQbY93v21O1JgEBpzXZrUqUYqjTAvt+zp25PAgRKa7ZbkyrFUKUB9v2ePXV7EiBQWrPdmlQphioNsO/37KnbkwCB0prt1qRKMVRpgH2/Z0/dngQIlNZstyZViqFKA+z7PXvq9iRAoLRmuzWpUgxVGmDf77lY6uuf3JS89q68cbMV+XyzudF4o1ioXMBe4jR7u730GkGgtGa7NalSDFUaYN/vuViqFmhpya5AP3pns3n9vfp1vUjxbr3EaW3VdYNAac12a1KlGKo0wL7fc7FUbb/zYvLYFejzo49/ynrv+VE5yzwvdVktcZ6KPxEordlpTaoUQ5UG2Pd7LpZq7H+/8UGfQM83N87Nr2QB+bn8UZZIx58IlNbstCZViqFKA+z7PRdLWb68NLvkHYHmbzw/qtR4Wrs0WyIfWy5xmY4/ESit2WlNqhRDlQbY93sulhoXaP72R+9sjjvj86Oj9Qw0JX8iUFqz05pUKYYqDbDv91wsNb4Lf5qfXDqX00iXjfNJdYjLTfcX6wWB0prt1lxdlb7RgWCrNMC+33Ox1OhJpOL186PqRFG9B2+NyH6fkD8RKAJdvUBd/FkaNMAqDbDv91wsZV/GdLN8oyHQYu6Z7cMX4jxtXRJaLPGLj7LFj+fpIUYQKAJFoAj0evw60Myc5u3L8ghnv0A3m597lNAhUASKQBEoAs2pfZnthd+47ghU9t2zt80Mc4dA3/ggG9jZuV8tCBSBIlAEet3wZeHKlkDP6wmqOcjZfww0f69zw+eKQaAIFIEi0JdNSzIAACAASURBVOumL83ssilQew+/vNrTPll0eVyHyO/4TOE++Bx1gV5tM+7u+OXaWhOBxlAlBDpCsdSIQC/tR4Z09/DNlU/yVvZvKodBtQV6tjXcfr/3t2trTQQaQ5UQ6AjFUiMCte47Oi/0aO/DZzv9x9YSl5tUDoMqC/Riu71/ff3iZHvnWd+v19aaCDSGKiHQEYqlho+Byqmj8tflDvuOe+HN05jSOAyqK9CXD3J/GoM+7Pv92loTgcZQJQQ6QrFU4yx8506kc+uI50fvFC8u5YrRztOY0jkMqivQK9l3P+s/DLq21kSgMVQJgY5QLGWfJRIdVq//83fsGeVlacf8eXb2M5ibk9gkbkjSFeiZ7Lpf9B8FXVtrrvMmwbVVCYGOUCxl+fK4/cZrv+2odUa+1Gmh0J4n0uez0hQOg6oK9NVjmXhebW896RlAa8bQmlQphioNsO/37N756aIt0PvFTy9OKoFuLaqRbq2ZR3BrTZOEW2vmEdxa0yTh1pp5BLfWHKonVYqhSl1mfc8wC1WByjmkcYG69aaJ4N6abr1pIri3pltvmgj+WpMqxVClDvO+Z5iDN4H2nob/2jQmD/QYIbkkqFIMSUzqQwS6HP5noDbam5PHCMklQZViSGJSHyLQ5fB/DNRGe3PyGCG5JKhSDElM6kMEuhzezsIPX8aktDl5jJBcElQphiQm9SECXQ5v14H23supvTl5jJBcElQphiQmtSECXY4D3YmktDl5jJBcElQphiQmtSECXY4D3QuvtDl5jJBcElQphiQmtSECXY4DPY1JaXPyGCG5JKhSDElM6kIEuhwHeh6o0ubkMUJySVClGJKY1IQ/8RMz7jaAWRzoifRKm5PHCMklQZViSGJSD866XQtmcaC/iaS0OXmMkFwSVCmGJCa1GQJdDgRKEjKQKoWfxKQ2Q6DLgUBJQgZSpfCTmNRmCHQ5EChJyECqFH4Sk9oMgS4HAiUJGUiVwk9iUpsh0OVYVqAA4B0EuhwIFGBlINDlmCTQ0yT+vh7AOkCgyzFFoB+9k8Tf1wNYBwh0OaYItP4jpgAQPAh0OZiBAqwMBLock46BXm42N30nAgA6INDlmHYW/vkRc1CASECgyzHxGGgTTsoDhAsCXQ4ECrAy5gn0o3c2x1WIc7PL+fzotXfldznl7y0hWCo439TnmrPx9W9asWT56mXULCvQr0KwUKUYmNRm6gI9r1r/ZkcIIs3csZUY8hc3+mNZS69hIrbsnUiH3vxgN1QpBia1mbZAL0sbPj8qpo2ZAuWk8ml1fvn50cc/Vb1tZqw3+2LlQYrfnK9iEopAoYAqxcCkNlMWaP2L8opwS6CZQcvTy+ebG+fVqWYjUJlgNgSaLSuDrB/jBYFCAVWKgUltpixQ6+jlubGiLdDL0pP5e/XALNY3HclOfEOgp5Y013B55GSB5kcusm/g3On/GYfe/GA3VCkGJrWZP4EWP9oCfX5UCDQXaR0h/+lc9GjHshfNRiUzA63Om507/U/j0Jsf7IYqxcCkNlMWaOdOxL4Z6Gk+3zyX3fY8VnUm3o51uYozRxbTBFqeOMu+gdONi0EPvfnBbqhSDExqM2WB5rvaDe9ZAs0WulG/9fyo/IWJ9bzcibdjna/gsGeDSQLNDwm/8UHxDZy6XH1w6M0PdkOVYmBSm80WqI195vyyfiunFmi2jFzolFuhmqsWMi53V22Bnq7tuURT74U/rr7N8431P6o9OfTmB7uhSjEwqc3UBVoptOc60ONy2RvFsGKBQqDlTjwCPbW/TZdnMx1684PdUKUYmNRmswW6806kUgOlLy2BljqUfffsN8dWrGInPnmBVt+GPVufxaE3P9gNVYqBSW3mSaDVHnvjVHo5vHmbosQyO/HJHwMtv6/6gEgaAv2ZT5sN4q3i1Ve+2dpt+YZvq35t+Dl/ul6sGJiPiItIqvSo/mrv1V989qW/NW35r3xzfKWxmNRm3gRazjA7Am3s09+0YmW/eP293WfhL2cfDAwGBLqLR9UW8Xb+clCg5ZjmsLcHggdIJFV6Wn2x+Vf9sR9qvzsGAt1XoHJ802B2wTsCvaxuyizvVapi5adPdl4H2riqPlJm7MI7fOpDb357kLXkm/m/X/5EMeXJ2rXZoplAZdIjY8xPxbvVD9EQSZWyOrxZ/JR/xVKTR5VKV86kNlOegdrH7PoFainhfNO8+/N089q32rNZex/++dH889GhMPEkUv4N1jezzj4OfOjNbzq1HsuOHRJotQeZ/Vvtzd+LbA4aS5XuyVf8aPPmvVKmWS3ePGROyzGpzZQF+ry6KbM8WdQWqJw6Kkcct26fb5zRT/Je+OJpLNVtCfOvpD/05jedL3+i2tMrZjeDAs3GmK6+Zx8NbbwIn1iqJAdBs+//7aflxLNTnNUyqc2UBVo/N6l85GdboPYUtbh0yYp12XNNaXJPYzJXz5tv4Ny6nnZ/Dr35TccSaPHjFIFmO5Vv2yGi6upYqiRfa14WqdLTWqrVCbyvfPPH/sv8pbHsU+vt/N/me18tjnh/w7eFf4B0UptpC9Q6yW7ddlTROEhaPCHEjnXauqY0f55dwQr8ud+tnNZ1CvM49OY3nawVm/PHYYEWs82nzSNx96Lar4ylSvK9P82+cvm5nOxX5/2KYy4f+4WbjRGl+aE8YFoJ1HqvOiH4LyLQkvZZ+FO79VsCrW7glF/eaMQq99QbjyRZiz4nP0zEukvB5WEAh9789uDpZtPQ4ZRjoC1jPopqHz6aKt2TwyVvyVdcliKbm+b/ZMUodxnyl3/KVPIt87o4FFMI1H6vPF6dL5GwQGEOkx9nVyrU7Vkqh9789uFp8xLPxmVMeZ9aAn26kT58qxkhplPD0VTpqXVMuth3L/fq5X9YxcvqdL1cT/G09GopUOs9OSpQqjdkJrUZAl0OHqi8m6c7rwMtBdq8MLS5U/9VBOoJUWep0bc6X3QxoLq2Xg6QyrHsQqD2e49kz+ERAoX9QKDD3BNf9u3CN4SKQBei+JrLwyXmn8ahE/N/uretgjVP1dcnkar36rpZpw4DZVKbIdDlQKBjZO01eBb+0aZqX46BLsKj4vSRKUduQvnZ+n/avgKtbm5CoLAXkwVaXnzgduXroTe/WRT7grtPIj2tDpQ+bRqTs/B++PInPvZDMle0L2YytyZt8tcIFIEuxESBXta7q0mchW/c2mJEOHAWvpqDNsdEdnV3PFXKv1iZ3edVkP9v3SutOEOg7MLDPKYJ1HpaldP1W4fe/KZj31w9JtB8z/HtcqR11PNeVIdAIxJofrXDvfr/Xm/eq+6jFWPuJ1D77lAECnsxSaD57ns58bR+nMGhN7/pZLOYN+sf3x4UaHU5IffCL8PTzT9f7Wt/+RP/3L9aXSdRXRW/n0Bl4sllTLAvEx8mYt1qkMif9HgkF1U/2ow/TEQuK+RpTIuQf7kyu68fapcVpLyyaV+BciE9zGXi80BtZabxODvreaDGjY3rQPO3Wrdyli94HugC5HPM6hD1vU3j+XYZv+DTjbN+EwQqp+9/PsdAYT+mCbRx2DORByqX14DKVGdYoNbOH0+k988j639PTzf2oRRzRYQ5prmPQOVhIqs5ifSNezGzm+EagYJAlYoLpA6dwzCT2mw/fSJQFyYeA72x89VeHHrzg90kXKXqjofwH+E6qc0Q6HJMPQtfHwS9TOKByumRcJXkHGAEF05MajMEuhzTrgPNDFruxedPBp3/d0wOvfnBblKu0r3mQw0CZlKbIdDlmHgWvo8ZR0IPvfnBbpKuUnECP/T9968i0OBAoFBAlWJgUpsh0OVAoFBAlWJgUpsh0OXgcXZQQJViYFKbIdDlQKBQQJViYFKbIdDlWFagX5vG5IEeIySXBFWKIYlJbYZAl2NZgX44jckDPUZILgmqFEMSk9oMgS4HM1CSkIFUKfwkJrUZAl0OBEoSMpAqhZ/EpDZDoMuBQElCBlKl8JOY1GYIdDkQKEnIQKoUfhKT2gyBLgcCJQkZSJXCT2JSm80T6EfvWPfGnNdPTT/fVI9fu2zeSnPz+vnRa+82n7CeRbnRvPWm/TfUrHjmLwTVz3a7LO7O6SydxawoV2VWXFAMb6zFXsWuj6UEAiUJGUiVwk9iUpvNFmitndo0+dtioH6BNp7Plinx5qBA7XhGoLXSTicItFxXJdB6cK3Jxip2fCwtEChJyECqFH4Sk9psvkArE9ameX708U81H2Bpzf7Mj5nD6lmkWTB7Z+cjLxvxcoE2ppKlQJtLZ5kd1wuY8ZJDHuBmsd6NlZW1ih0fSwsEShIykCqFn8SkNnMQqEzcatOcb260tNMWaDZztOd7xz0KtGjEy5b/1kqOl5txgcofaCtzyF5JKOvHxip2fCwtEChJyECqFH4Sk9pstkC/6UjmkpVpcptZxszpCNTstttvDAi0GS/76bcdidNON79oXKBlZmUI+/BrdSShuYr+j6UGAiUJGUiVwk9iUpvNFujxuUioMk3+F9AaAusRqDlxVFAYbUCgzXjZ8v/ZJ6ujma//mT0F2hj50Tu9Kfd/LDUQKEnIQKoUfhKT2my+QKtT1pVpzF9AO288u7Ij0Pr3pdEGBNqMly9/WqrucnPjcoJATy2B9v99y+Yq+j+WGgiUJGQgVQo/iUltNl+g+d64mUyKaQqZWfvo130CrX5fGm23QFvx8uUvy1Wdbm5OEGjjGGivD1ur6P1YeiBQkpCBVCn8JCa1mYNAr8u9XTFNMZHLfmWJpyvQ6i/1lv82LkRq/Am1Vrx8+fKvpmd78O9ddi9jOr5uCLS8VLQ6e9XzB4Jbq+j9WHogUJKQgVQp/CQmtZmLQMu93dI0cnTz0r6as0egrZnnToG245UX4h+bt25c7xZo+7LS3QJtr6LvYymCQElCBlIlnyH+kQP2qibgItByb7c0jewIlzvOBT0CLc152djx76Edr7wQP18q24O/3r0L39bxboG2V9H3sRRBoCQhA6mSxxAu/rQMOqnNnARa7O2WpjmvzVWfrukRaKkyOR+0U6DteOWF+NnP5j8jx0CtOzR3HwNtr6LvYymCQElCBlIljyHiEWjmr9ffO5fLkVq3UOb0CfT5UWYr+/7KXoF24slEMr8p9Mb1mEDzI6CNe+GbZ+Evj/tW0fOxNEGgJCEDqZLHEPEINNfUcWGa+tCnfbtmn0Czha353S6BduKJB29ky94cF2g9B+27YN9c4NRZRc/H0gSBkoQMpEoeQ0Qk0MxEr31reVzSeiZT15r2j+ebG0aihl0C7cQTD77+597J1Tkq0PxoqP0wEVuIz4/yUZ1V9HwsTRAoSchAquQxREwCNbvBxTNBqlNHhZ7KH3sEmu3D/9kj2aHeIdBuvOqOzF+c78GPC7TYEa9X3LkXvruK7sdSBYGShAykSh5DxCRQ81iPzDT2DUjWYzV7BZpJ8F+u9vJ3CLQbr1z+sjxeOeFC+suNte9fLylPY+quovuxVEGgJCEDqZLHEFEJNH8y5xsfWLe4X1vP6tgh0EvrPFPjTE4VpCdePZE03uu5DjRfpHUrpzV1LZ5nV18g2rOKzsea9BVOBoGShAykSh5DxCVQsz/cvIGzPo3UL1Brb3qHQHvilcvXF7+PCzT7bbZMIwf7+vrOKjofa9JXOBkEShIykCp5DBG+QGEOCJQkZCBV8hgCga4TBEoSMpAqeQyBQNcJAiUJGUiVPIZAoOsEgZKEDKRKHkMg0HWCQElCBlIljyEQ6DpBoCQhA6mSxxAIdJ0oCfRie7f86WqbcXfHMMUN0neE5JKgSl5DINB1oiPQFyfizLOt4fb7veMUN0jfEZJLgip5DYFA14mKQF89lknnxXZ73/j0zrO+gYobpO8IySVBlbyGQKDrREWgF7LX/vJB7k9j0Id9AxU3SN8RkkuCKnkNgUDXiYZAXz64/YcLgV7JvvtZ/2FQxQ3Sd4TkkqBKXkMsK9Bv2QtXAaSMhkDPtg9LYZ7JrvtF/1FQxQ3Sd4TkkqBKXkMsKdD99IlAXVAQ6FUmz0Kgrx7LxPNqe+tJz1DFDdJ3hOSSoEpeQyDQdeIu0JcPMldWAr1fvPnipBLo1sJ5ZRY/4YBmHofHpTMPnXsyuAl0v3Uh0OVwF+hZLs1CoHIOaQmBuvhzXQZdsjVhLgh0nTgL9Moc9uwKtPc0vOIukZtAlZLwHeEwO4eKufmOEE8S6lUaAIEuh6tAXz02U82BGaiN4gaJQAUEGkMSCHSduAr0Qk6/7zwGaqO4QSJQAYHGkAQCXSeOAn1xUlyu1D0L7/syJgQqINAYkkCg68RRoBfWGaI7z+zrQHvv5VTcIBGogEBjSAKBrhNdgS54JxICFRBoDEkg0HWi9Di7s8XvhUegAgKNIQkEuk50Bbrg05gQqIBAY0gCga4TZYEu9zxQBCog0BiSQKDrRFugiz2RHoEKCDSGJBDoOon2byIhUAGBxpAEAl0nCNQlCd8REOhqkkCg6wSBuiThOwICXU0SkQj065/cZLz2bvHqctPg5vVH72yOq7Hnmzc+kCVK8gWzMRX5gHWDQF2S8B0Bga4miSgEasnwZv7aWaBlnBWDQF2S8B0Bga4miRgE+vxoU/ix+qF8W2akOwTalKQ1JotTLbpSEKhLEr4jINDVJBGBQDMVVrvcp9bccb5A818eX68aBOqShO8ICHQ1SUQg0FP7kKX1wkGg5ZgVg0BdkvAdAYGuJonwBZrtb1smtF4h0AEQqEsSviMg0NUkEb5ALzevv2cFOd3cKH9yEegpAtVEcYNEoAICjSGJ8AVaG9NQzx05BjoAAnVJwncEBLqaJGIQaMN19YS0KVCbzmVMx9cNgV5umrPaFYJAXZLwHQGBriaJ4AXamFxeuwm0eWHoqkGgLkn4joBAV5PEagQ6ZRe+IdR1g0BdkvAdAYGuJongBap+DPR80wy4ThCoSxK+IyDQ1SQRvkAvmyfM3c/CX3IvvDaKGyQCFRBoDEmEL9CmCa1Xs8/CpzAHRaAuSfiOgEBXk0T4As3mnNYpc+vFbIHmR0N5mIgmihskAhUQaAxJRCBQ/Xvhs99xGZMmihskAhUQaAxJRCBQ/acx5YdBV74Tj0BdkvAdAYGuJokYBNp5HmjBqEAtbnRu5Vz5pUwI1CUJ3xEQ6GqSiEKg7SfSF7gINPvtuq+lR6AuSfiOgEBXk0QkAoU9QaAuSfiOgEBXkwQCXScI1CUJ3xEQ6GqSQKDrBIG6JOE7AgJdTRIIdJ0gUJckfEdAoKtJAoGuEwTqkoTvCAh0NUkg0HWyrEA/nMaUgW4CVUrCd4RJIdxa01qVhyr5jhBPEupVGgCBLgczUJckfEdgBrqaJNSrNAACXQ4E6pKE7wgIdDVJINB1gkBdkvAdAYGuJgkEuk4QqEsSviMg0NUkgUDXCQJ1ScJ3BAS6miSWFeh+0T11exIgUJckfEdAoKtJQr1KA+wb3VO3JwECdUnCdwQEupok1Ks0wL7RPXV7EiBQlyR8R0Cgq0lCvUoD7BvdU7cnAQJ1ScJ3BAS6miTUqzTAvtE9dXsSIFCXJHxHQKCrSUK9SgPsG91TtycBAnVJwncEBLqaJNSrNMC+0T11exIgUJckfEdAoKtJQr1KA+wb3VO3JwECdUnCdwQEupok1Ks0wL7RPXV7EiBQlyR8R0Cgq0lCvUoD7BvdU7cnAQJ1ScJ3BAS6miTUqzTAvtE9dXsSIFCXJHxHQKCrSUK9SgPsG91TtycBAnVJwncEBLqaJNSrNMC+0T11exIgUJckfEdAoKtJQr1KA+wb3VO3JwECdUnCdwQEupok1Ks0wL7RPXV7EiBQlyR8R0Cgq0lCvUoD7BvdU7cnAQJ1ScJ3BAS6miTUqzTAvtHNQueb194tlz/dbN74oPjx65/cHF9/9E72H+Hc/O75UTb6ctPgZj66pgq3ahCoSxK+IyDQ1SShXqUB9o1uFrrMDWjINfj6e9f1uwh0NwjUJQnfERDoapJQr9IA+0Y3C2Xyu1Es/vxoU8n0PFfpLoHK8OrHLMbN+XaIEgTqkoTvCAh0NUmoV2mAfaMXS53Kfvv55sZpKdNMnTeuEegACNQlCd8REOhqklCv0gD7Ri+WkoOgmS5vXpb78IUREehuEKhLEr4jINDVJKFepQH2jV4sle253yz+fe1dkeKlkSoC3Q0CdUnCdwQEupok1Ks0wL7Ri6VEk5eZIeXnYrcege4Ggbok4TsCAl1NEupVGmDf6OVi5UHQ09yW57Y5EehuEKhLEr4jINDVJKFepQH2jV4uVhz4LCRY7LuXe/WZQG0GBVpz3MlrjSBQlyR8R0Cgq0lCvUoD7Bu9XEzUWWr0WH5GoAMoCPRsu93efl9eXWWvtnd3DFXcIBGooN6airn5jhBPEupVGmDf6OVixZ56eQWT+af8mV343TgL9OWDreF+8fKseFULtYHiBolABfXWVMzNd4R4klCv0gD7RpflzovTR8aB+eRTfkagu3EV6KvHRpYX2+3D/OWFMemLk+2dZ32jFTdIBCqot6Zibr4jxJOEepUG2De6LPf86PX3RIf2xUwIdDeuAr3a3nqS/3tmdtuz6aiZiWYGfdg3WnGDRKCCemsq5uY7QjxJqFdpgH2jy3K5/87L+5FyaV5aP1fBEWgDV4Gelcc7L8yc80r23c/6D4MqbpAIVFBvTcXcfEeIJwn1Kg2wb/RqwdPN8am40tzQWfyMQHejdRa+EOiZ7Lpf9B8FVdwgEaig3pqKufmOEE8S6lUaYN/o1YKXm3/hk2LD50cf/1SpQwS6GyWBvnqcTzmL/+bInn0LxQ0SgQrqramYm+8I8SShXqUB9o1eLZg/h0keZGc91A6B7kZHoOWppOyf8mT8i5NKoFsLlZUVuAlUMZGD49aah84+FZas0uzo+QWfN+TFafXzPgK1qCKtGQ2B5pd+ml13OYeEQJdkydaEuSxZpfnRzzf1FPKyuhYege5GS6Bml90WaO9peMVdIjeBKiXhOwK78KtJQr1KA+wb3V0B6aJ1EuksN2jvDNRGcYNEoIJ6ayrm5jtCPEmoV2mAfaO7t3+6aAnUnD/qPQZqo7hBIlBBvTUVc/MdIZ4k1Ks0wL7R3ds/XdQeJpJfx2SfhecypmhbUzE33xHiSUK9SgPsG929+9NFVaD2daC993IqbpAIVFBvTcXcfEeIJwn1Kg2wb3SF9k8WR4HWO+0X+eSTO5F0IyDQ1SShXqUB9o3u5oC0cZ2Byi1Hxfkj7oXXjYBAV5OEepUG2De6owOSxlWgmTLzuWY2EzX77DyNSTUCAl1NEupVGmDf6I4OSBrnY6CZLO0ngPI8UM0ICHQ1SahXaYB9o7s6IGWUnkhf77HzRHrFCPEL1HOREq7SAPtGd+n+1OFvIrkk4TtC9AKlSoJ6lQbYN7qnbk8CBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3hOAECsuBQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmzrEA/nMaUgW6tqZSE7wiTQri1prUqquQxhHqVIAiYgbok4TsCM1CNJHxHYAaaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBOqShO8ICFQjCd8REGjCIFCXJHxHQKAaSfiOgEATBoG6JOE7AgLVSMJ3BASaMAjUJQnfERCoRhK+IyDQhEGgLkn4joBANZLwHQGBJgwCdUnCdwQEqpGE7wgINGEQqEsSviMgUI0kfEdAoAmDQF2S8B0BgWok4TsCAk0YBYFebDPuyqurxqsWihskrSkgUCdirRIEgbNAXz7YGm49MS/Pile33+8drLhB0poCAnUi1ipBELgK9NVjo84XJ9s7z67NbPR+/aqD4gZJawoI1IlYqwRB4CrQq3LqmTnzoZmO3q9fdVHcIGlNAYE6EWuVIAhcBXpWzjWzmejdXKflvvtZ/2FQxQ2S1hQQqBOxVgmCwF2gd60fRKfZrnzvUVDFDZLWFBCoE7FWCYJA6zIms/NeTENzZM++heIGSWsKCNSJWKsEQaAlUGPMTKD3i5cvTiqBbi2UVpbj1pqKiRwct9b0mxtVEkKuEsxHSaDZBDTbeZdzSAh0SUJuTaokhFwlmI+OQDNz5sc8bYH2t4/fgAAAGQBJREFUnoZX3CVya02lJHxHYBdeIwnfEdiFTxgVgWbiNBPO3hmojeIGSWsKCNSJWKsEQaAh0PxmJDPf7D0GaqO4QdKaAgJ1ItYqQRAoCDTbXS9taZ+F5zKmaFtTMTeqJCDQdeIu0NqfjetAe+/lVNwgaU0BgToRa5UgCJwFmvmznmxyJ5JuBASqkYTvCAg0YVwFWp5/r19xL7xiBASqkYTvCAg0YVwFetG85YinMalGQKAaSfiOgEATxlGg8jTQ6inKPA9UMwIC1UjCdwQEmjCOAs3mmk2B8kR6zQgIVCMJ3xEQaMLwN5FckvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGkn4joBAEwaBuiThOwIC1UjCdwQEmjAI1CUJ3xEQqEYSviMg0IRBoC5J+I6AQDWS8B0BgSYMAnVJwncEBKqRhO8ICDRhEKhLEr4jIFCNJHxHQKAJg0BdkvAdAYFqJOE7AgJNGATqkoTvCAhUIwnfERBowiBQlyR8R0CgGT/PAaWPoRACga4TBOqShO8ICNTNn1MMGmuVIAgQqEsSviMgUASKQIMGgbok4TsCAkWgCDRoEKhLEr4jIFAEikCDBoG6JOE7AgJFoAg0aBCoSxK+IyBQBIpAgwaBuiThOwICRaAINGgQqEsSviMgUASKQINmWYF+OI0pA91aUykJ3xEmhXBrTWtVYVbJTaA6H0MhhHqVIAiYgbok4TsCM1BmoLuqBEGAQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQI1CUJ3xEQKAJFoEGDQF2S8B0BgSJQBBo0CNQlCd8RECgCRaBBg0BdkvAdAYEiUAQaNAjUJQnfERAoAkWgQYNAXZLwHQGBIlAEGjQ6Ar3a3q9/zLi7Y5ziBolABQSKQOFQqAj05YNKoGdbw+33ewcqbpAIVECgCBQOhYZAM3+KQC/MTy9Otnee9Y1U3CARqIBAESgcCgWBZroUgcpUNHvrYd9QxQ0SgQoIFIHCoXAXaLbT/t0/XAr0Svbdz/oPgypukAhUQKAIFA6Fs0Czyeb9V49LgZ7JrvtF/1FQxQ0SgQoIFIHCoXAX6O98di0Czf4tJ55X21tPegYrbpAIVECgCBQOhcpZeEug5cmkFyeVQLcWGisrcWvNIoZLZ6p9kG9xwARwa021z9GLQpXcBOr34+1ByFWC+agKtL6cKQqBBtGaLv4sDBpya66lSu6EXCWYjzeB9p6GV9wlcmtNE8KtNXU+xtfcBJpHcGtNK1uqNBN24dPF/wzURnGDXEtrItAYquQeAoGuE//HQG0UN8i1tCYCjaFK7iEQ6DrRFmh1Fj6Cy5iCaE0EGkOV3EMg0HWiKlD7OtDeezkVN8i1tCYCjaFK7iEQ6DrRFWhcdyIF0ZoINIYquYdAoOtEV6Bx3QsfRGsi0Biq5B4Cga4TXYHG9TSmIFoTgcZQJfcQCHSdKAs0queBBtGaCDSGKrmHQKDrRFugMT2RPojWRKAxVMk9BAJdJyn/TaQgWhOBxlAl9xAIdJ0gUAQq2VKlmSDQdEGgCFSypUozQaDpgkARqGRLlWaCQNMFgSJQyZYqzQSBpgsCRaCSLVWaCQJNFwSKQCVbqjQTBJouCBSBSrZUaSYINF0QKAKVbKnSTBBouiBQBCrZUqWZINB0QaAIVLKlSjNBoOmCQBGoZEuVZoJA0wWBIlDJlirNBIGmCwJFoJItVZoJAk0XBIpAJVuqNBMEmi4IFIFKtt0q/WMHVlUl9xAIdJ0gUAQq2Xaq5OLPwqBrqZJ7CAS6ThAoApVsO1VCoNNAoOmCQBGoZNupEgKdBgJNFwSKQCXbTpUQ6DQQaLogUAQq2XaqhECngUDTBYEiUMm2UyUEOg0Emi4IFIFKtp0qIdBpINB0QaAIVLLtVAmBTgOBpgsCRaCSbadKCFSlTF/zUiUIAgSKQCXbTpUQaMBVgiBAoLSmZNupEgINuEoQBAiU1pRsO1VCoAFXCYJgWYF+OI0pA91a04Rwa02dj/GhW2vmEdxa08q2UyU3gVIlr1WCIGAGOhedjxHi3KZ6ixlowFWCIECgtKZk26kSAg24ShAECJTWlGw7VUKgAVcJggCB0pqSbadKCDTgKkEQIFBaU7LtVAmBBlwlCAIESmtKtp0qIdCAqwRBgEBpTcm2UyUEGnCVIAgQKK0p2XaqhEADrhIEAQKlNSXbTpUQaMBVgiBAoLSmZNupEgINuEoQBAiU1pRsO1VCoAFXCYIAgdKakm2nSgg04CpBECBQWlOy7VQJgQZcJQgCBEprSradKiHQgKsEQYBAaU3JtlMlBBpwlSAIECitKdl2qoRAA64SBAECpTUl206VEGjAVYIgQKC0pmTbqRICDbhKEAQIlNaUbDtVQqABVwmCAIHSmpJtp0oINOAqQRAgUFpTsu1UCYEGXCUIAgRKa0q2nSoh0ICrBEGAQGlNybZTJQQacJUgCBAorSnZdqqEQAOuEgQBAqU1JdtOlRBowFWCIECgtKZk26kSAg24ShAECJTWlGw7VUKgAVcJggCB0pqSbadKCDTgKkEQIFBaU7LtVAmBBlwlCAIESmtKtp0qIdCAqwRBoC7Qq23G3R2/nLCpTt2maU0EmnSVIAi0BXq2Ndx+v/e3EzbVqds0rYlAk64SBIGyQC+22/vX1y9Otnee9f16wqY6dZumNRFo0lWCINAV6MsHuT+NQR/2/X7Cpjp1m6Y1EejUKn2jA8FWCYJAV6BXsu9+1n8YdIJQpponjNZ0/hghtmb11koE6uLP0qABVgmCQFegZ7LrftF/FHSCUKaaJ4jWdP8YIbZm9RYCRaAwjKpAXz2WiefV9taTngEThDLVPEG0pvvHCLE1q7cQKAKFYbQFer/46cVJJdCtheK63FrThHBrTaXP4daaeQS31hzKzU2gwVTJTaDBVwkOiapA5RzSEgJ1680iRAgCdetNE8FfazoLNIwquQs06CrBAfEm0N7T8BN2aSfv+3qOkFwSVCmGJDTbFRTwPwO10d6cPEZILgmqFEMSmu0KCvg/BmqjvTl5jJBcElQphiQ02xUU8HYW3vdlTL4jJJcEVYohCc12BQW8XQfaey+n9ubkMUJySVClGJJQbVdwJ9o7kXxHSC4JqhRDEqrtCu5Eey+87wjJJUGVYkhCtV3BnWifxuQ7QnJJUKUYktBtV3Am2ueB+o6QXBJUKYYklNsVXIn2ifS+IySXBFWKIQntdgVHov2bSL4jJJcEVYohiUXbFcZBoCQhA6lS+Eks2q4wDgIlCRlIlcJPYtF2hXEQKEnIQKoUfhKLtiuMg0BJQgZSpfCTWLRdYZxlBToR9weHKjx6lCS8R17LFxREEnAQEChJHCzyWr6gIJKAg4BASeJgkdfyBQWRBBwEBEoSB4u8li8oiCTgICBQkjhY5LV8QUEkAQcBgZLEwSKv5QsKIgk4CAiUJA4WeS1fUBBJwEFAoCRxsMhr+YKCSAIOAgIliYNFXssXFEQScBAQKEkcLPJavqAgkoCDgEBJ4mCR1/IFBZEEHAQEShIHi7yWLyiIJOAgBClQAIAYQKAAADNBoAAAM0GgAAAzQaAAADNBoAAAM0GgAAAzQaAAADNBoAAAMzmMQC+227vWy1ePtzn3i1cvTm496RmXDbr9/ssH25LP/gXzbvbGw6Hg2VL3ZaHb/8f2zrN8iVtfyn+4fvWjxft3JVKTh3kmX8p+yMeWsT7/J7LRjZGf+e/KNRXv5gtUa39xYqdylWXwfms9+SctP7295nzB+42wT5rLfe5L21s/bS1XpHhhvsT8I1tfRv4r85VetT9eJxOqFGGV4KAcRKD5xphvpSUX1uZybbdmY1z+4q69NZmNvtuazeDZqy9US/yqRmvWq/1vy0jd1vyOP1ClJT30sLc17feqtecdJn19fX3W05p5uKHWrAff/mv2ct/+P2+3f7yx3MPyi3yo1ppUyV5LqFWCw3IQgb44+e4frjvqquyybHs020fdmo1xZgv+Y2UnXmy/s9gau63ZDP7qJ8vN9tWP5Rug1ZpXZnt8cfJvf6FYrUTKVv8/VZL47G/Kgsn8xGTwXc+KkdY2X+ReLPK3rVY271abfN4IZWv+Uek804JVK+Wrk6+gGFCEzVb1N7LpzEkZ13zA7Iv4DY+LiUxO8RkuzBp2tabkZGfUnhdSpdiqBIflIAK92N69sHe56v2gvAnqjac9brv9136ftOadv2x+0928Ggtd/+zJ9lc8qxa3WvMf/phpm2z03yl6z2rNJ2dFgBcnn8mDyWTFhPj8+z2tmb1TrvGiXMt1GeqPVG1yta1a84t1fmdmjiKteeunHlQteb8Km6/KzEMeWh/wL2+/58fr1vz1Zrm/az6JVmtSpRiqBIflEALNNwl7AmMdTMu33eqN5rhsi/uvTmT7zLa4vy8b+sOB4Pmm/4Oy+O/abv/1qjX/nhyyevjiBxqR8oWvim40U4tq2pKH+L5tcXSt1Zpn0mvZr36kns9kv/1LJ9KFZ9v/odo5rPcYs7dNi8maJaxpzTKsee9KPnr5Ab+0zXZci9b8ghw4zCTzh9RakyrFUCU4MIcQaL7h19tPZ7Op3miOy3+6GG/N5kJ5H9yXxX/v/5pvukVr/lvFcTEz+ie33/Gk2ZovTqQ1TbBy7zD/Kd8n7bRmnUQW768//mXWR/upB5Vnbv+VqjWtlLN1/I4drSlhzXv5yh9aH/D3FMvlyX9pWx4v/FvmpI1Sa1KlGKoEB+YQAj3LN/ULa5fL+l/9tbXxdMblB6KKcwm7dw6bC+Uzgqo17//dbXGK2Jy1NTMMa3Tf3OaL2++VY1ZFiHxPLj9R0GzNq+qMRHPtxX7m/TKTu1eyHuvUTL7Iv2G15pnVmhL2ovFJy1V8/k9sf3Pemn9x+yv+YZbXf5CP+d+3v/z/VGtNqhRDleDAHECgxRbx4qSeDzTO9lYbT2uc2eL+vy9sf13+YufpidZCF9tfZrVmPjXKTxHf+vPZGv9KdbCuGG215k8/LmYz2dr+G+vUQ9YGn38/e/Xr261ZHc1rrb3o8uJ3Z9uHZWv+vuIjCHWK7aNrErbRmtUqfr9Z7tWPbn/jdbZ7a66M+TFzJFGnNalSDFWCQ3MAgRb/67emNOWVG9ZB/Sc948wW9/K/b14S0tm8WgvlEweb7zSniD/77+ebcrXaYnTdmt/xB8rjY397++3/S3lljsngR7e/1kx1vmhFzPcrz+QMcGvt+Sd5+aA8gXH7/ao1a+7b068XJ9++rQ/r2ZStWfN7H+e7t9lyP3uy/f7r679plss69Lueda5YHGzNRiZUKboqwaFZXqCvyonDlXVRm1z8Zl9h2B5XtObIFYbthdqt+T0/ns9nDNmAf1q++yOdS6DNhvrqJ7efe3JdXVtdtkFry7dbs71280mKvcNs37Dc2fvZk+Z6mhf+1dfbDLZm5pXPNcd8/v080h2t1qRKMVQJDs7yApVdp5cPmpvDmWwg5cbTHiet+YXi6NK/8wONy1p2BK8PXRU7h3f+gdmg/8188TvP8tFmtV9odv33VsHk8hcT9Z8W54qry/6qbV5as7328srofGC2b1i35vfbn7vRmr+lWnMWQcLaO4fWKn6ztdx/lJvqrGpN951DqhRDleDgLC/Q+taS5mF6s01Z53fb46Q1/2DZGP+gcUxsR/D20bU7z/IRn/2T5qLnu43R9umJTjDTJGflDODvbLe/tffoWnvt5rf5bmHxn5Gja9nSnyvXvPvomrWKX5qZIp/H/Bfb/MxHcc+LWmtSpRiqBAdncYE29kgedn5337ropDlOWvOP5edH8y3O/K+/uXl1Fmqe3/1b5bXO5hLtx82jZA87rdkIlh+8kjtT/v8vlhm0zu921i4zn/x2w7syLBv1Xc+sD11Pv/6f7fbfLX7Td373n3xh27qv7/u2/4kZmH3IbKq2vfXFz6i1JlWKoUpweBYXaH1Q7eWD8o6M+kkOpttkc2+Oq1rzYbYl3t/Rmp2FGlcY3jcXkPyTbX5N3vf8eL5xV1fiFOd9m615tf3sb6rONJv5VDkJMUF7rjAs1362vfN/23fr5AfWLvIBVWu2bFJdYfgD23ovs32FYZ7kH2p+wO32+4ucsgmPOYj4nWqtSZViqBIcnsUFWt0Okm82xZ5VvY9otWZnXNWa2a9u/ZH+1uwslN8394PmdX5V8w/kF5BkO2ef+d35zuHntuaCPLPYr9rm16Y0W/MsmzGUP2bb/vdmAX5H3ZomA2tHtmie8urA++XapXFv//XH+WesW9PaKz7LrxWU87vb6gyNMcqFdY9LcUyv8QG32994VlxmmJ+Q+JXb7b+n1ppUKYYqweFZWqD2SQmzEef/vVu/8bA6JtUeV7em+d9639G17kKNu6y/IHdZl4tv6+dj/NGT7X/das1s3O+RzTgb8fm/eiI99PKB2a20tvmXD4rdzurOaPlo5WTnf8z3DevW3HmX9edO6gtk+u6ybn3A7a95YO4UNJ/pV0tOCq1JlWKoEgTA0gK1ZzKvHpsXF7KTVj4i0mw83XF1a5pjZuYEbWvz6gn+6i/Kwbkf224/Y7Xmsws5CJavNhstT8CwLnD8q7IZ55OH/7h4sM61WeePNFvTZPQH8xVeVE+PNMfjzG/lBumqNXc+5+fW/yZfwba8rKb5nJ/WB8wodSEniZVakyrFUCUIgIUF2jiWlm9Q+bZRn7Mspxq3nvSM61xhWF28Iq9/uif4K/NoiYLv+JLdmsWT02S1V/nJivYFjvVmbDb9P163pkVxNU19TWDVqw+tmY/pqHrn0MJ6MmRxk2A536t7twz7U43l7l4X10eKLvIDhL9y/9ZsRqRKMVUJQmBhgda3BuaU5xDKqwvte5N7xrVb8wflV9XG+5d6gudLyfZdnFLI3s+mCebywt9fr/Zl9SAy6wLHejPOf52fEt7ZmtfX/+/31Y1Zrr1zsXm3Ne0HmxW3xOQhrGedF8nfetJdzlzrbeviP3yg1JpUKYYqQQjwN5EAAGaCQAEAZoJAAQBmgkABAGaCQAEAZoJAAQBmgkABAGaCQAEAZoJAAQBmgkABAGaCQAEAZoJAE+B8Y/PGB41fXnbeyXh+ZIbe2BHC/g1AwiDQBBiy30fvZG/c3Dn+xoQQAMmCQBOgbb/Ncf07M9ds6NAotT1fRaAAPSDQBDi3lZntsm9ef8/63Wv/0ua1d+vBxp/FG1//ZKXK8840FQAQaAo0BGq0eGy9eOP/avz61J6hXsr+PQIF6AGBJkBToPnLag88M+RxJtF6Sprv0h83xpqdeAQK0AMCTYCWQC8tgZ7me+unlh1PmyflM7ma3XkECtADAk2AlkBPa4Fm881Ml5ZR8yOgfaZEoAA9INAEOO+cdz9u/CazppxGyn5pnWFqhECgAG0QaAI0BHpunYUXc9YDei+rv+5cxtQ7BiA5EGgCdK4DlclkNt+8Uf5bOhWBAuwBAk2AtkDtM0bm5/rI5+WOa+QRKEAPCDQBzvv1eV1fv1RNPAdmoBwDBWiDQBOgOsR53vCnuUy+ojiNVJyW7w2BQAHaINAEqM8R5Wfgq1305k3vxRC57rMnBAIFaINAE8A6C39p3ahZPrNOMHvznetAy4OiCBSgBwSaAPZlTNZevP12Jc7z1kHQ02IQAgXoAYEmQNuUxZmj5t66iLN1L/xlORqBAvSAQBOgcSF9dRi0ecI9e7vQ6Xn7aUzH5bsIFKANAk2A8/YDlowMTxvv5jPTG/JDaUvzPNBCsggUoAcEmgDnHVVmu+Xtu94vrV379qmlgZuZAFIGgSZA62lMxU78eeueo9ybpRVPa0/u+ptICBTgGoEmQUugxoa/pPPcOvtJoOdNfSJQgF4QKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATBAoAMBMECgAwEwQKADATP4ZltHFF8RTfLMAAAAASUVORK5CYII=" title alt width="672" /></p>
 </div>
 
 
